@@ -1,8 +1,17 @@
 import React,{Component} from 'react'
+import './../css/navbar.css'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+
 export default class Home extends Component{
     render(){
-        return(
-            <h1></h1>
+        return(<div>
+            <div>
+                <NavBar/></div>
+        <div>
+                <Footer/>
+            </div>
+            </div>
         )
     }
 }
