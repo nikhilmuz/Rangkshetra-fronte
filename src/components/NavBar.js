@@ -2,6 +2,7 @@
 import React, {Component} from "react";
 import "./../css/navbar.css"
 import logo from "../assets/logo.png";
+import tbs_logo from "../assets/tbs_logo.png"
 
 export default class NavBar extends Component{
     render(){
@@ -10,10 +11,14 @@ export default class NavBar extends Component{
     <div className="box">
         <div>
             <div className="logo">
-                <img src={logo} alt="Rangkshetra" height="140px"/>
+                <img src={logo} alt="Rangkshetra" height="100px"/>
 
             </div>
-            <div className='site-title' ><span >RangKshetra</span> </div>
+            <div className='site-title' ><span >Rangkshetra</span> </div>
+            <div className="tbsLogo">
+                <a href="http://www.tbsplanet.com"> <img src={tbs_logo} alt="TBS PLANET" height="80px"/></a>
+
+            </div>
            <ul id="nav" className="navbar">
                 <li><a href="/">Home</a></li>
                 {/*<li className="dropdown">*/}

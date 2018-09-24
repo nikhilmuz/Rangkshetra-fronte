@@ -27,8 +27,7 @@ export default class About extends Component{
                         Share your art! Spread the joy! Indulge in the festivity of colours - <b>Indugle in Rangkshetra!</b>
 <br/><br/>
                         <b>About TBS Planet:</b>
-<br/>
-                        TBS Planet Comics is India's fastest growing comics and animation startup.
+<br/>   TBS Planet Comics is India's fastest growing comics and animation startup.
                         Started in July 2016 by IIT Roorkee Silver Medalist, Rajeev Tamhankar, TBS Planet is home to Indian superheroes
                         like Ved, Varun, Karma, Yug etc and has been official comics partners to Bollywood movies
                         like "Shivaay" and "A Flying Jatt". You can also try our comics for free on digital

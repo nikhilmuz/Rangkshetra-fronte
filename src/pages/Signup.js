@@ -25,7 +25,7 @@ export default class Signup extends Component{
 
         <input type = "submit" name = "signup_submit" value = "Sign me up"/>
 
-                <p align="center">or <a href='/login'>login</a>instead.</p>
+                <p align="center">or <a href='/login'>login</a> instead.</p>
             </div>
             </div>
 
