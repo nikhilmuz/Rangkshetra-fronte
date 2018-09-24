@@ -8,7 +8,7 @@ body{
 
 /* Add styles to the form container */
 .container {
-    top: 100px;
+    top: 50px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -30,6 +30,7 @@ input[type=text], input[type=password] {
 }
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
+    color: #000000;
     outline: none;
 }
 /* Set a style for the submit button */

@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import DashboardSidebar from '../components/DashboardSidebar'
 import './../css/dashboard.css'
 import Footer from "../components/Footer";
+import Userhome from "./Userhome";
 export default class Dashboard extends Component{
     render(){
         return(
@@ -9,6 +10,7 @@ export default class Dashboard extends Component{
                 <DashboardSidebar/>
         <div className = "content-wrapper">
             <div className = "content">
+                <Userhome/>
             </div>
         <footer className = "dashboard-footer">
             <div className = "copyright">

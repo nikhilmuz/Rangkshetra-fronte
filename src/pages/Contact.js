@@ -10,24 +10,25 @@ export default class Contact extends Component {
                     <NavBar/>
                 </div>
 
-                <form className="contactbox">
-                    <h1 style={{ textAlign: 'center'}}>Contact Form</h1>
-                    <div>
+                <div className="contactbox">
+                    <h1 style={{ textAlign: 'center'}}>Contact Us</h1>
+
                         <label htmlFor="fname">Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your Full name.." required/>
+                        <input type="text"  name="firstname" placeholder="Your Full name.." required/>
 
                         <label htmlFor="Email Id">Email Id</label>
-                        <input type="text" id="EmailId" name="Email Id" placeholder="Your Email Id.." required/>
+                        <input type="text"  name="Email Id" placeholder="Your Email Id.." required/>
 
                         <label htmlFor="subject">Subject</label>
-                        <input type="text" id="Subject" name="Subject" placeholder="Subject.."/>
+                        <input type="text"  name="Subject" placeholder="Subject.."/>
 
                         <label htmlFor="message">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Write something.." style={{height: '150px'}}
+                        <textarea  name="message" placeholder="Write something.." style={{height: '100px'}}
+
                                   required/>
                         <button type="submit" className="submitbtn">Submit</button>
-                    </div>
-                </form>
+                </div>
+               <br/>
                 <Footer/>
             </div>
         )

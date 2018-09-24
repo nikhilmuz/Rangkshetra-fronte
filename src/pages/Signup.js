@@ -7,19 +7,25 @@ export default class Signup extends Component{
         return(
             <div>
                 <NavBar/>
-            <div className= "login-box">
+            <div className= "signup-box">
                 <h1> Sign up Rangkshetra </h1>
             <div className = "right">
+
         <label>Name</label>
         <input type = "text" name = "Full Name" placeholder = "Full Name" required/> <br/>
+
         <label> Email - Id </label>
         <input type="text" name="email" placeholder="E-mail"/> < br/>
+
         <label> Password </label>
         <input type="password" name="password" placeholder="Password" required/> < br/>
+
         <label> Confirm Password </label>
         <input type="password" name="password2" placeholder="Retype password" required/> < br/>
+
         <input type = "submit" name = "signup_submit" value = "Sign me up"/>
-                <p align="center">or <a href='/login'>login</a> instead.</p>
+
+                <p align="center">or <a href='/login'>login</a>instead.</p>
             </div>
             </div>
 

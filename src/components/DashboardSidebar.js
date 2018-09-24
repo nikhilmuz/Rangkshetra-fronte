@@ -6,7 +6,7 @@ export default class DashboardSidebar extends Component{
             <div>
                 <div className="dashboardnavbar" role="navigation">
                     <div className="navbar-header">
-                        <div className="logo"><h1>Rangkshetra</h1></div>
+                        <div className="logo"><a><h1 style={{ textAlign: 'center'}}>Rangkshetra</h1></a></div>
                     </div>
                 </div>
 
@@ -15,7 +15,7 @@ export default class DashboardSidebar extends Component{
                         <li className = "active"> <a href = "dashboard"> <i className = "fa fa-home"> </i>Home</a> </li>
 
                         <li> <a href ='upload'> <i className = "fa fa-upload"/>Upload</a></li>
-                        <li><i className = "fa fa-sign-out"/>Log Out</li>
+                        <li><a><i className = "fa fa-sign-out"/>Log Out</a></li>
                     </ul>
                 </div>
             </div>
