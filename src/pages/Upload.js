@@ -4,7 +4,34 @@ import DashboardSidebar from './../components/DashboardSidebar'
 import Footer from './../components/Footer'
 import DropToUpload from 'react-drop-to-upload';
 
+import axios from 'axios';
+import {API_ROOT} from "../Config";
+
+const UPLOAD_API = 'users/myuploads/';
+
 export default class Upload extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+    }
+    function handleUpload(){
+            // var payload = {
+            //     caption: this.state.Caption,
+            //
+            // };
+        }
+        // axios
+        //     .post
+        //             (API_ROOT+UPLOAD_API,)
+        //     .then((response)  => {
+        //     console.log(response);
+        //     window.location.href = '/user/dashboard';
+        // })
+
+
+
+
+    }
     handleDrop(files) {
         var data = new FormData();
 
@@ -12,10 +39,10 @@ export default class Upload extends Component{
             data.append('file' + index, file);
         });
 
-        fetch('/upload', {
-            method: 'POST',
-            body: data
-        });
+        //fetch('/upload', {
+          //  method: 'POST',
+            //body: data
+        //});
     }
     render(){
         return(
@@ -26,8 +53,15 @@ export default class Upload extends Component{
                     <DropToUpload
                         onDrop={ this.handleDrop }
                     >
-                        Drop file here to upload
+                        <p id="filedrag" style={{ textAlign: 'center' , }}>
+                            <i className = "fa fa-download"/>  Drop file(s) here to upload!</p>
                     </DropToUpload>
+
+
+                <br/>
+                    <p>CAPTION: <input type="text" name="caption" /></p>
+
+                    <button className="uploadbtn" onClick={this.handleUpload}type="upload">Upload</button>
                 </div>
             </div>
                 <Footer/>
