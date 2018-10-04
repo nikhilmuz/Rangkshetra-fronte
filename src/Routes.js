@@ -9,7 +9,7 @@ import Upload from './pages/Upload'
 import About from './pages/About'
 import Setting from "./components/Setting";
 import PasswordChange from "./pages/PasswordChange";
-import Feed from "./components/Feed";
+import ArtCard from "./components/ArtCard";
 
 export default class Routes extends Component{
     render(){
@@ -25,7 +25,7 @@ export default class Routes extends Component{
                 <Route path='/user/setting' component={Setting} />
                 <Route path='/about' component={About} />
                 <Route path='/user/password' component={PasswordChange} />
-                <Route path='/test' component={Feed} />
+                <Route path='/test' component={ArtCard} />
             </Switch>
             </BrowserRouter>
         )

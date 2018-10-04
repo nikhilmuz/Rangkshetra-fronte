@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "../css/feed.css"
 
-export default class Feed extends Component{
+export default class ArtCard extends Component{
     render(){
         return(
             <div className="feedBox">
