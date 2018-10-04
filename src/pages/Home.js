@@ -6,11 +6,11 @@ import Footer from '../components/Footer'
 export default class Home extends Component{
     render(){
         return(<div>
-            <div>
-                <NavBar/></div>
-        <div>
+
+                <NavBar/>
+
                 <Footer/>
-            </div>
+
             </div>
         )
     }

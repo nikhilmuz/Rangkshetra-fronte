@@ -7,6 +7,7 @@ import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
 import Upload from './pages/Upload'
 import About from './pages/About'
+import Setting from "./components/Setting";
 
 export default class Routes extends Component{
     render(){
@@ -19,6 +20,7 @@ export default class Routes extends Component{
                 <Route path='/signup' component={Signup} />
                 <Route path='/user/dashboard' component={Dashboard} />
                 <Route path='/user/upload' component={Upload} />
+                <Route path='/user/setting' component={Setting} />
                 <Route path='/about' component={About} />
             </Switch>
             </BrowserRouter>

@@ -3,6 +3,7 @@ import './../css/upload.css'
 import DashboardSidebar from './../components/DashboardSidebar'
 import Footer from './../components/Footer'
 import DropToUpload from 'react-drop-to-upload';
+import DashboardTitlebar from "../components/DashboardTitlebar"
 
 import axios from 'axios';
 import {API_ROOT} from "../Config";
@@ -47,12 +48,12 @@ export default class Upload extends Component{
     render(){
         return(
             <div>
+                <DashboardTitlebar/>
                 <DashboardSidebar/>
                 <div className = "content-wrapper">
                 <div className = "content">
                     <DropToUpload
-                        onDrop={ this.handleDrop }
-                    >
+                        onDrop={ this.handleDrop }>
                         <p id="filedrag" style={{ textAlign: 'center' , }}>
                             <i className = "fa fa-download"/>  Drop file(s) here to upload!</p>
                     </DropToUpload>
