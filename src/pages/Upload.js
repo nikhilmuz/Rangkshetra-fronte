@@ -45,6 +45,10 @@ export default class Upload extends Component{
                         <p id="filedrag" style={{ textAlign: 'center' , }}>
                             <i className = "fa fa-upload"/>  Drop file(s) here to upload!</p>
                     </DropToUpload>
+                    <p>OR  <input type="file" name="pic" accept="image/*"/> </p>
+
+
+
                 <br/>
                     <p>Caption: <input onChange={this.handleCaptionChange} type="text" name="caption" /></p>
                     <button className="uploadbtn" onClick={this.handleUpload} type="upload">Upload</button>
@@ -52,6 +56,7 @@ export default class Upload extends Component{
             </div>
                 <Footer/>
             </div>
+
         );
     }
 }
