@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard'
 import Upload from './pages/Upload'
 import About from './pages/About'
 import Setting from "./components/Setting";
+import PasswordChange from "./pages/PasswordChange";
 
 export default class Routes extends Component{
     render(){
@@ -22,6 +23,7 @@ export default class Routes extends Component{
                 <Route path='/user/upload' component={Upload} />
                 <Route path='/user/setting' component={Setting} />
                 <Route path='/about' component={About} />
+                <Route path='/settings/pwdchange' component={PasswordChange} />
             </Switch>
             </BrowserRouter>
         )
