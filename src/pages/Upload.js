@@ -2,36 +2,64 @@ import React,{Component} from 'react'
 import './../css/upload.css'
 import DashboardSidebar from './../components/DashboardSidebar'
 import Footer from './../components/Footer'
-import DropToUpload from 'react-drop-to-upload';
+import Dropzone from 'react-dropzone';
 import DashboardTitlebar from "../components/DashboardTitlebar"
-
 import axios from 'axios';
-import {API_ROOT} from "../Config";
 
-const UPLOAD_API = 'users/myuploads/';
+import {API_ROOT} from "../Config";
+const UPLOAD_API = 'arts/upload/';
 
 export default class Upload extends Component{
     constructor(props) {
         super(props);
         this.state = {
             caption: '',
-            file: '',
+            art: [],
     };
         this.handleCaptionChange = this.handleCaptionChange.bind(this);
         this.handleUpload = this.handleUpload.bind(this);
+        this.handleDrop = this.handleDrop.bind(this);
     }
     handleCaptionChange(e){
         this.setState({caption: e.target.value})
     }
-    handleUpload(){
-        axios.get('');
-    }
     handleDrop(files) {
-        var data = new FormData();
-
-        files.forEach((file, index) => {
-            data.append('file' + index, file);
-        });
+        var file = files[0];
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            console.log(event.target.result);
+            this.setState({art: files[0]});
+        };
+        reader.readAsDataURL(file);
+    }
+    handleUpload(){
+        const payload = new FormData();
+        payload.append('caption', this.state.caption);
+        payload.append('art', this.state.art);
+        axios
+            .post(
+                API_ROOT+UPLOAD_API,
+                payload,
+                {
+                    headers: {
+                        Authorization: 'Token ' + localStorage.getItem('Token'),
+                        'content-type': 'multipart/form-data',
+                    }
+                }
+            )
+            .then(
+                response =>
+                {
+                    console.log(response);
+                    alert('success')
+                }
+            )
+            .catch(
+                error =>
+                {
+                    alert(error);
+                }
+            )
     }
     render(){
         return(
@@ -40,17 +68,17 @@ export default class Upload extends Component{
                 <DashboardSidebar/>
                 <div className = "content-wrapper">
                 <div className = "content">
-                    <DropToUpload
-                        onDrop={ this.handleDrop }>
-                        <p id="filedrag" style={{ textAlign: 'center' , }}>
-                            <i className = "fa fa-upload"/>  Drop file(s) here to upload!</p>
-                    </DropToUpload>
-                    <p>OR  <input type="file" name="pic" accept="image/*"/> </p>
-
-
+                    <Dropzone
+                        multiple={false}
+                        accept="image/*"
+                        onDrop={this.handleDrop}
+                        style={{width: '100%'}}
+                    >
+                        <p id='filedrag' style={{ textAlign: 'center' }}> <i className = "fa fa-upload"/>  Drop your art here or click to upload!</p>
+                    </Dropzone>
 
                 <br/>
-                    <p>Caption: <input onChange={this.handleCaptionChange} type="text" name="caption" /></p>
+                    <p>Insert Caption Below: <input onChange={this.handleCaptionChange} type="text" name="caption" /></p>
                     <button className="uploadbtn" onClick={this.handleUpload} type="upload">Upload</button>
                 </div>
             </div>
