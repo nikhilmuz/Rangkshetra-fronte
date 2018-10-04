@@ -9,8 +9,7 @@ export default class About extends Component{
                 <NavBar/>
                 <div className="aboutContainer">
                     <br/>
-                    <p align="justify">
-                        <b>Rangkshetra</b> is an initiative by TBS Planet Comics to bring together all kinds of Indian artists,
+                    <p align="justify">Rangkshetra is an initiative by TBS Planet Comics to bring together all kinds of Indian artists,
                         comic creators and animators.
 <br/><br/>
                         A lot of Indian artists today struggle to find a platform to showcase their talent,
@@ -24,7 +23,7 @@ export default class About extends Component{
                         even a short or long animation - share it with us and we would help you take your artworks to
                         like-minded people through our platform.
                     <br/><br/>
-                        Share your art! Spread the joy! Indulge in the festivity of colours - <b>Indugle in Rangkshetra!</b>
+                        Share your art! Spread the joy! Indulge in the festivity of colours - <b>Indulge in Rangkshetra!</b>
 <br/><br/>
                         <b>About TBS Planet:</b>
 <br/>   TBS Planet Comics is India's fastest growing comics and animation startup.

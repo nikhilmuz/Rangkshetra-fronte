@@ -9,11 +9,14 @@ h1 { font-size: 40px; }
     color: white;
     text-decoration: none;
 }
-.dashboard-logo { display: inline-block; }
+.dashboard-logo {
+    display: inline;
+}
 .dashboard-logo h1 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     margin: 10px 15px;
-	color:red;
+	color: #f6f7ff;
 }
 .content-wrapper {
     float: left;
@@ -26,6 +29,13 @@ h1 { font-size: 40px; }
     padding: 25px 20px 0 20px;
     background-color: white;
     overflow-x: hidden;
+}
+.tbsLogo{
+    display: inline-block;
+    float: right;
+    padding-right: 10px;
+    padding-top: 15px;
+
 }
 .dashboard-footer {
     clear: both;
@@ -41,11 +51,7 @@ h1 { font-size: 40px; }
 /* 3. Sidebar
 ------------------------------------------------------*/
 
-.dashboardnavbar {
-    margin-bottom: 0;
-    border-radius: 0;
-}
-.navbar-header { color: rgb(127,127,127); }
+
 
 /*file upload*/
 input[type=button] {
@@ -64,18 +70,8 @@ input[type=button]:hover {
 
 /* 8. Bootstrap overrides
 ----------------------------------------------*/
-.nav-pills>li>a, .nav-tabs>li>a, .alert, .progress, .panel, .btn, .panel-group .panel, .form-control, .modal-content, .breadcrumb {
-    border-radius: 0;
-}
-.list-group-item:first-child, .panel-heading {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-.list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.form-control-feedback { right: 15px; }
+
+
 
 
 
