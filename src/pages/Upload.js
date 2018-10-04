@@ -14,24 +14,17 @@ export default class Upload extends Component{
     constructor(props) {
         super(props);
         this.state = {
+            caption: '',
+            file: '',
+    };
+        this.handleCaptionChange = this.handleCaptionChange.bind(this);
+        this.handleUpload = this.handleUpload.bind(this);
     }
-    function handleUpload(){
-            // var payload = {
-            //     caption: this.state.Caption,
-            //
-            // };
-        }
-        // axios
-        //     .post
-        //             (API_ROOT+UPLOAD_API,)
-        //     .then((response)  => {
-        //     console.log(response);
-        //     window.location.href = '/user/dashboard';
-        // })
-
-
-
-
+    handleCaptionChange(e){
+        this.setState({caption: e.target.value})
+    }
+    handleUpload(){
+        axios.get('');
     }
     handleDrop(files) {
         var data = new FormData();
@@ -39,11 +32,6 @@ export default class Upload extends Component{
         files.forEach((file, index) => {
             data.append('file' + index, file);
         });
-
-        //fetch('/upload', {
-          //  method: 'POST',
-            //body: data
-        //});
     }
     render(){
         return(
@@ -55,14 +43,11 @@ export default class Upload extends Component{
                     <DropToUpload
                         onDrop={ this.handleDrop }>
                         <p id="filedrag" style={{ textAlign: 'center' , }}>
-                            <i className = "fa fa-download"/>  Drop file(s) here to upload!</p>
+                            <i className = "fa fa-upload"/>  Drop file(s) here to upload!</p>
                     </DropToUpload>
-
-
                 <br/>
-                    <p>CAPTION: <input type="text" name="caption" /></p>
-
-                    <button className="uploadbtn" onClick={this.handleUpload}type="upload">Upload</button>
+                    <p>Caption: <input onChange={this.handleCaptionChange} type="text" name="caption" /></p>
+                    <button className="uploadbtn" onClick={this.handleUpload} type="upload">Upload</button>
                 </div>
             </div>
                 <Footer/>
