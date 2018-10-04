@@ -9,14 +9,14 @@ export default class Home extends Component{
         return(<div>
 
                 <NavBar/>
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
-                <Feed name="Nikhil" caption="ghdf" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
+                <Feed name="Nikhil" caption="Caption" img="https://usercontent.rangkshetra.com/arts/1/20180914172757.jpg" />
                 <Footer/>
 
             </div>
