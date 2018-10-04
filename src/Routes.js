@@ -24,7 +24,7 @@ export default class Routes extends Component{
                 <Route path='/user/upload' component={Upload} />
                 <Route path='/user/setting' component={Setting} />
                 <Route path='/about' component={About} />
-                <Route path='/settings/pwdchange' component={PasswordChange} />
+                <Route path='/user/password' component={PasswordChange} />
                 <Route path='/test' component={Feed} />
             </Switch>
             </BrowserRouter>

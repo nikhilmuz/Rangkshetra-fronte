@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import './../css/userhome.css'
+import Feed from "../components/Feed";
 
 
 export default class Userhome extends Component {
@@ -34,7 +35,6 @@ export default class Userhome extends Component {
 
                     </div>
                 </div>
-
 
             </div>
         )

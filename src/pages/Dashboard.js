@@ -3,6 +3,7 @@ import DashboardSidebar from '../components/DashboardSidebar'
 import Footer from "../components/Footer";
 import Userhome from "./Userhome";
 import DashboardTitlebar from "../components/DashboardTitlebar"
+import Feed from "../components/Feed";
 
 
 export default class Dashboard extends Component{

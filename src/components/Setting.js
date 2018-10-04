@@ -13,7 +13,7 @@ export default class Setting extends Component{
                 <DashboardSidebar/>
                 <div className = "content-wrapper">
                     <div className = "content">
-                       * <a href='/settings/pwdchange'> Change Password</a>
+                       * <a href='/user/password'> Change Password</a>
                 </div>
                 </div>
                 <Footer/>
