@@ -83,7 +83,7 @@ export default class Signup extends Component{
             <div>
                 <NavBar/>
                 <div className= "signup-box">
-                    <h1> Sign up Rangkshetra </h1>
+                    <h1> Sign up </h1>
                     <div className = "right">
 
                         <input type = "text" onChange={this.handleFnameChange} placeholder = "First Name" required />
@@ -93,7 +93,7 @@ export default class Signup extends Component{
                         <input type="password" onChange={this.handleConfPwdChange} placeholder="Retype password" required/> < br/>
                         <input type = "submit" onClick={this.handleSubmit} value = "Sign me up"/>
 
-                        <p align="center">or <a href='/login'>login</a> instead.</p>
+                        <p align="center">   or <a href='/login'>login</a> instead.</p>
                     </div>
                 </div>
 
