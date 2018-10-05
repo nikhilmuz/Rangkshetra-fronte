@@ -3,6 +3,7 @@ margin:auto;
 }
 
 .feedBox{
+    margin-left: 100px;
     display: inline-block;
     height: 300px;
     width: 300px;
