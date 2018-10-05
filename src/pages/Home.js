@@ -61,15 +61,17 @@ export default class Home extends Component{
         return(
             <div>
                 <NavBar/>
+                <div className='feed'>
                 <InfiniteScroll
+                    className="text-center"
                     pageStart={0}
                     loadMore={this.loadMore}
                     hasMore={this.state.more}
                     loader={<div className="loader" key={0}>Loading ...</div>}
                 >
                     {items}
-                </InfiniteScroll>
-                <Footer/>
+                </InfiniteScroll></div>
+                    <Footer/>
             </div>
         )
     }
