@@ -2,8 +2,6 @@ import React,{Component} from 'react'
 import './../css/dashboard-sidebar.css'
 import axios from "axios";
 import {API_ROOT} from "../Config";
-import tbs_logo from "../assets/tbs_logo.png";
-import logo from "../assets/logo.png";
 
 const LOGOUT_API = 'users/logout';
 export default class DashboardSidebar extends Component{
