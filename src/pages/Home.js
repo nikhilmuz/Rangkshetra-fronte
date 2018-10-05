@@ -52,6 +52,12 @@ export default class Home extends Component{
             )
     }
     render(){
+        var items = [];
+        this.state.arts.map((art, i) => {
+            items.push(
+                <ArtCard name={art.uploader} caption={art.caption} img={art.art} />
+            );
+        });
         return(
             <div>
                 <NavBar/>
@@ -61,7 +67,7 @@ export default class Home extends Component{
                     hasMore={this.state.more}
                     loader={<div className="loader" key={0}>Loading ...</div>}
                 >
-                    {/*<ArtCard name={art.uploader} caption={art.caption} img={art.art} />*/}
+                    {items}
                 </InfiniteScroll>
                 <Footer/>
             </div>
