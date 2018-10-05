@@ -18,6 +18,12 @@ export default class Login extends Component{
         this.handlePwdChange = this.handlePwdChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+    componentWillMount(){
+        let storageToken=localStorage.getItem('Token');
+        if(storageToken!=null){
+            window.location.href='/user/dashboard';
+        }
+    }
     handleUsernameChange(e){
         this.setState({username: e.target.value });
     }

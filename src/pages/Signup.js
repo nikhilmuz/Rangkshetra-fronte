@@ -24,6 +24,12 @@ export default class Signup extends Component{
         this.handleConfPwdChange = this.handleConfPwdChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+    componentWillMount(){
+        let storageToken=localStorage.getItem('Token');
+        if(storageToken!=null){
+            window.location.href='/user/dashboard';
+        }
+    }
     handleFnameChange(e){
         this.setState({fname: e.target.value });
     }

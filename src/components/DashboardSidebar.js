@@ -3,7 +3,6 @@ import './../css/dashboard-sidebar.css'
 import axios from "axios";
 import {API_ROOT} from "../Config";
 
-
 const LOGOUT_API = 'users/logout';
 export default class DashboardSidebar extends Component{
     constructor(props) {
