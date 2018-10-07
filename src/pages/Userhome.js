@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import './../css/userhome.css'
-import ArtCard from "../components/ArtCard";
 
 
 export default class Userhome extends Component {

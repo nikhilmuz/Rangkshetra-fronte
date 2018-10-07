@@ -33,15 +33,16 @@ export default class Home extends Component{
             .then(
                 response =>
                 {
+                    response.data.results.map((result) => {
+                        this.state.arts.push(result);
+                        return null;
+                    });
                     if(response.data.next==null){
                         this.setState({more: false});
                     }
                     else {
                         this.setState({next: response.data.next});
                     }
-                    response.data.results.forEach(result=>{
-                        this.state.arts.push(result);
-                    });
                 }
             )
             .catch(
@@ -49,14 +50,15 @@ export default class Home extends Component{
                 {
                     alert(error);
                 }
-            )
+            );
     }
     render(){
-        var items = [];
+        let items = [];
         this.state.arts.map((art, i) => {
             items.push(
                 <ArtCard name={art.uploader} caption={art.caption} img={art.art} key={i} />
             );
+            return null;
         });
         return(
             <div>
@@ -66,6 +68,7 @@ export default class Home extends Component{
                     loadMore={this.loadMore}
                     hasMore={this.state.more}
                     loader={<div className="loader" key={0}>Loading ...</div>}
+                    useWindow={false}
                 >
                     {items}
                 </InfiniteScroll>

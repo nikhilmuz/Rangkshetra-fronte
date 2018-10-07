@@ -47,7 +47,7 @@ export default class Signup extends Component{
     }
 
     handleSubmit(){
-        if(this.state.pwd==this.state.confPwd){
+        if(this.state.pwd===this.state.confPwd){
             axios
                 .post(
                     API_ROOT+SIGNUP_API,
