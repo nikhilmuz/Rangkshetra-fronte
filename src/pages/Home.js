@@ -56,7 +56,7 @@ export default class Home extends Component{
         let items = [];
         this.state.arts.map((art, i) => {
             items.push(
-                <ArtCard name={art.uploader} caption={art.caption} img={art.art} key={i} />
+                <ArtCard name={art.uploader} caption={art.caption} img={art.art} likes={art.likes} key={i} />
             );
             return null;
         });

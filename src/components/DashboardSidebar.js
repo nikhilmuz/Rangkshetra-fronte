@@ -39,9 +39,9 @@ export default class DashboardSidebar extends Component{
             <div>
                 <div className = "navbar-collapse collapse sidebar">
                     <ul className = "sidebar-menu">
-                        <li className = "active"> <a href = "dashboard"> <i className = "fa fa-home"> </i>Home</a> </li>
+                        <li className = "active"> <a href = "dashboard"> <i className = "fa fa-home"> </i>Dashboard</a> </li>
                         <li> <a href ='upload'> <i className = "fa fa-upload"/>Upload</a></li>
-                        <li> <a href='setting'><i className = "fa fa-gears"/>Settings </a></li>
+                        <li> <a href='setting'><i className = "fa fa-gears"/>Preferences</a></li>
                         <li onClick={this.logout}><a><i className = "fa fa-sign-out"/>Log Out</a></li>
                     </ul>
                 </div>

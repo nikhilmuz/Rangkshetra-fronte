@@ -1,5 +1,5 @@
 .footer {
-    position: relative;
+    position: fixed;
     width: 100%;
     bottom: 0;
     font-size: 10px;
@@ -8,7 +8,4 @@
     color: #ffffff;
     background-color: #000;
     left: 0;
-
-
-
 }
