@@ -1,16 +1,36 @@
 .row{
 margin:auto;
+    text-align: center;
 }
 
 .feedBox{
-    margin-left: 100px;
+    text-align: center;
     display: inline-block;
     height: 300px;
     width: 300px;
-
+    border: 2px solid ;
     padding: 10px;
-
+    margin: 15px;
+    margin-left: auto;
+    margin-right:20px;
+    margin-left: 100px;
 }
 .image {
     max-height: 150px;
+}
+
+.likebutton{
+    height: 25px;
+    padding: 2px;
+    color: #171eff;
+    cursor: pointer;
+    font-size: 15px;
+}
+.likebutton:active{
+    color: #3cfcff;
+    background-color: #5bc0de;
+
+}
+.feed{
+    padding-left:10px;
 }

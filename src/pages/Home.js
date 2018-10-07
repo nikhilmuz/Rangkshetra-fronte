@@ -63,7 +63,9 @@ export default class Home extends Component{
         return(
             <div>
                 <NavBar/>
+                <div className='feed'>
                 <InfiniteScroll
+                    className="text-center"
                     pageStart={0}
                     loadMore={this.loadMore}
                     hasMore={this.state.more}
@@ -71,8 +73,8 @@ export default class Home extends Component{
                     useWindow={false}
                 >
                     {items}
-                </InfiniteScroll>
-                <Footer/>
+                </InfiniteScroll></div>
+                    <Footer/>
             </div>
         )
     }

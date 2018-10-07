@@ -8,7 +8,8 @@ export default class ArtCard extends Component{
                 <h3>{this.props.name}</h3>
                 <p>{this.props.caption}</p>
                 <img alt={this.props.caption} className='image' src={this.props.img} />
-                <button type='submit'><i className='fa-fa-heart-o'></i>like</button>
+                <br/>
+                <button type='submit' className='likebutton'><i className='fa-fa-heart'></i>like</button>
             </div>
         )
     }
