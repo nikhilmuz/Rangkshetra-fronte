@@ -14,6 +14,7 @@ margin:auto;
     margin-left: auto;
     margin-right:20px;
     margin-left: 100px;
+    margin-bottom: 100xpx;
 }
 .image {
     max-height: 150px;
@@ -22,7 +23,7 @@ margin:auto;
 .likebutton{
     height: 25px;
     padding: 2px;
-    color: #171eff;
+    color: #ff2cf5;
     cursor: pointer;
     font-size: 15px;
 }
