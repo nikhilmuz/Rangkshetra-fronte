@@ -1,8 +1,8 @@
 import React,{Component} from 'react'
-import './../css/passwordchange.css'
-import DashboardSidebar from './../components/DashboardSidebar'
-import Footer from './../components/Footer'
-import DashboardTitlebar from "../components/DashboardTitlebar"
+import '../../css/passwordchange.css'
+import DashboardSidebar from './../../components/DashboardSidebar'
+import Footer from './../../components/Footer'
+import DashboardTitlebar from "../../components/DashboardTitlebar"
 
 export default class PasswordChange extends Component{
 

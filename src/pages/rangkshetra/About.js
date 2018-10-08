@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import NavBar from '../components/NavBar'
-import '../css/about.css'
-import Footer from './../components/Footer'
+import NavBar from '../../components/NavBar'
+import '../../css/about.css'
+import Footer from './../../components/Footer'
 export default class About extends Component{
     render(){
         return(

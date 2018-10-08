@@ -20,12 +20,9 @@ export default class NavBar extends Component{
 
             </div>
            <ul id="nav" className="navbar">
-                <li><a href="/">Home</a></li>
-                {/*<li className="dropdown">*/}
-                    {/*<button className="dropbtn">Events</button>*/}
-                {/*</li>*/}
+                <li><a href="/rangkshetra">Home</a></li>
                 <li><a href="/login">Account</a></li>
-               <li><a href="/about">About Us</a></li>
+                <li><a href="/rangkshetra/about">About Us</a></li>
                 <li><a href="/contact"> Contact Us</a></li>
             </ul>
         </div>

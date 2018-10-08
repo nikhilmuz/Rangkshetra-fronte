@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import NavBar from '../components/NavBar'
-import '../css/login.css'
-import Footer from './../components/Footer'
+import NavBar from '../../components/NavBar'
+import '../../css/login.css'
+import Footer from './../../components/Footer'
 import axios from 'axios';
-import {API_ROOT} from "../Config";
+import {API_ROOT} from "../../Config";
 
 const LOGIN_API = 'users/login/';
 
@@ -21,7 +21,7 @@ export default class Login extends Component{
     componentWillMount(){
         let storageToken=localStorage.getItem('Token');
         if(storageToken!=null){
-            window.location.href='/user/dashboard';
+            window.location.href='/rangkshetra/user/dashboard';
         }
     }
     handleUsernameChange(e){
@@ -42,8 +42,7 @@ export default class Login extends Component{
             .then(
                 response =>
                 {
-                    console.log(response);
-                    window.location.href = '/user/dashboard';
+                    window.location.href = '/rangkshetra/user/dashboard';
                     localStorage.setItem('Token', response.data.token );
                 }
                 )

@@ -1,12 +1,12 @@
 import React,{Component} from 'react'
-import './../css/upload.css'
-import DashboardSidebar from './../components/DashboardSidebar'
-import Footer from './../components/Footer'
+import '../../css/upload.css'
+import DashboardSidebar from './../../components/DashboardSidebar'
+import Footer from './../../components/Footer'
 import Dropzone from 'react-dropzone';
-import DashboardTitlebar from "../components/DashboardTitlebar"
+import DashboardTitlebar from "../../components/DashboardTitlebar"
 import axios from 'axios';
 
-import {API_ROOT} from "../Config";
+import {API_ROOT} from "../../Config";
 const UPLOAD_API = 'arts/upload/';
 
 export default class Upload extends Component{

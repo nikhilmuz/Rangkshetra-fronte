@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import '../css/signup.css'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import '../../css/signup.css'
+import NavBar from '../../components/NavBar'
+import Footer from '../../components/Footer'
 import axios from "axios";
-import {API_ROOT} from "../Config";
+import {API_ROOT} from "../../Config";
 
 const SIGNUP_API = 'users/register/';
 

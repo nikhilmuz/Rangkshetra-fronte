@@ -1,16 +1,18 @@
 import React,{Component} from 'react'
-import {API_ROOT} from "../Config";
+import NavBar from '../../components/NavBar'
+import Footer from '../../components/Footer'
+import ArtCard from "../../components/ArtCard";
+import InfiniteScroll from 'react-infinite-scroller';
 import axios from "axios";
-import InfiniteScroll from "react-infinite-scroller";
-import UploadCard from "../components/UploadCard";
+import {API_ROOT} from "../../Config";
 
-const MY_UPLOADS_API = 'arts/myuploads/';
+const FEED_API = 'arts/feeds/';
 
-export default class Userhome extends Component {
+export default class Home extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            uploads: [],
+            arts: [],
             more: true,
             next: null,
         };
@@ -19,7 +21,7 @@ export default class Userhome extends Component {
     loadMore(){
         let url;
         if(this.state.next==null){
-            url=API_ROOT+MY_UPLOADS_API;
+            url=API_ROOT+FEED_API;
         }
         else {
             url=this.state.next;
@@ -27,17 +29,12 @@ export default class Userhome extends Component {
         axios
             .get(
                 url,
-                {
-                    headers: {
-                        Authorization: 'Token ' + localStorage.getItem('Token')
-                    }
-                },
             )
             .then(
                 response =>
                 {
                     response.data.results.map((result) => {
-                        this.state.uploads.push(result);
+                        this.state.arts.push(result);
                         return null;
                     });
                     if(response.data.next==null){
@@ -55,28 +52,31 @@ export default class Userhome extends Component {
                 }
             );
     }
-    render() {
+    render(){
         let items = [];
-        this.state.uploads.map((art, i) => {
+        this.state.arts.map((art, i) => {
             items.push(
-                <UploadCard name={art.uploader} caption={art.caption} img={art.art} likes={art.likes} id={art.id} key={i} />
+                <ArtCard name={art.uploader} caption={art.caption} img={art.art} likes={art.likes} id={art.id} key={i} />
             );
             return null;
         });
         return(
+            <div>
+                <NavBar/>
                 <div className='feed'>
-                    <InfiniteScroll
-                        className="text-center"
-                        pageStart={0}
-                        loadMore={this.loadMore}
-                        hasMore={this.state.more}
-                        loader={<div className="loader" key={0}>Loading ...</div>}
-                        useWindow={false}
-                    >
-                        {items}
-                    </InfiniteScroll>
+                <InfiniteScroll
+                    className="text-center"
+                    pageStart={0}
+                    loadMore={this.loadMore}
+                    hasMore={this.state.more}
+                    loader={<div className="loader" key={0}>Loading ...</div>}
+                    useWindow={false}
+                >
+                    {items}
+                </InfiniteScroll>
                 </div>
+                    <Footer/>
+            </div>
         )
     }
 }
-

@@ -3,7 +3,6 @@
 @import url(../libraries/font-awesome.min.css);
 
 * { font-family: 'Open Sans', sans-serif; }
-body { background-color: rgb(51, 77, 77); }
 h1 { font-size: 40px; }
 .btn a {
     color: white;

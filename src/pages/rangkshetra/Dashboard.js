@@ -1,8 +1,8 @@
 import React,{Component} from 'react'
-import DashboardSidebar from '../components/DashboardSidebar'
-import Footer from "../components/Footer"
+import DashboardSidebar from '../../components/DashboardSidebar'
+import Footer from "../../components/Footer"
 import Userhome from "./Userhome"
-import DashboardTitlebar from "../components/DashboardTitlebar"
+import DashboardTitlebar from "../../components/DashboardTitlebar"
 
 
 export default class Dashboard extends Component{
