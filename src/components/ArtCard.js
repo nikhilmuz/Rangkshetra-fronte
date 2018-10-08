@@ -1,7 +1,46 @@
 import React, {Component} from "react";
 import "../css/feed.css"
+import axios from "axios";
+import {API_ROOT} from "../Config";
+
+const LIKE_API = 'arts/like/';
 
 export default class ArtCard extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            id: this.props.id,
+            likes: this.props.likes,
+        };
+        this.handleLike = this.handleLike.bind(this);
+    }
+
+    handleLike(){
+        const payload = new FormData();
+        payload.append('id', this.state.id);
+        axios
+            .post(
+                API_ROOT+LIKE_API,
+                payload,
+                {
+                    headers: {
+                        Authorization: 'Token ' + localStorage.getItem('Token')
+                    }
+                },
+            )
+            .then(
+                response =>
+                {
+                    this.setState({likes: response.data.likes});
+                }
+            )
+            .catch(
+                error =>
+                {
+                    alert(error);
+                }
+            );
+    }
     render(){
         return(
             <div className="feedBox">
@@ -9,7 +48,7 @@ export default class ArtCard extends Component{
                 <p>{this.props.caption}</p>
                 <img alt={this.props.caption} className='image' src={this.props.img} />
                 <br/>
-                <button type='submit' className='likebutton'><i className='fa fa-heart'></i> {this.props.likes} likes</button>
+                <button onClick={this.handleLike} type='submit' className='likebutton'><i className='fa fa-heart'></i> {this.state.likes} likes</button>
             </div>
         )
     }
