@@ -3,7 +3,6 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/vendors/scrolloverflow'
 
 function Product(props){
-    console.log(props);
     switch(props.product){
         case 1:
             return <div>First</div>;
