@@ -10,12 +10,16 @@ import About from './pages/rangkshetra/About'
 import Setting from "./components/Setting";
 import PasswordChange from "./pages/rangkshetra/PasswordChange";
 import Landing from "./pages/Landing";
+import Nav from "./pages/Nav";
+import ComicNav from "./pages/ComicNav";
 
 export default class Routes extends Component{
     render(){
         return (
             <BrowserRouter>
             <Switch>
+                <Route exact path='/comics' component={ComicNav} />
+                <Route exact path='/nav' component={Nav} />
                 <Route exact path='/' component={Landing} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/login' component={Login} />

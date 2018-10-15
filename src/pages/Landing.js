@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/vendors/scrolloverflow'
+import ComicNav from "./ComicNav";
+import Nav from "./Nav";
 
 function Product(props){
     switch(props.product){
         case 1:
-            return <div>First</div>;
+            return <ComicNav/>;
         case 2:
             return <div>Second</div>;
         case 3:
@@ -41,7 +43,9 @@ export default class Landing extends Component{
             <ReactFullpage
                 anchors={['', 'products']}
                 sectionsColor={['#282c34', '#ff5f45']}
+                sectionContentMargin={0}
                 onLeave={this.onLeave.bind(this)}
+                delay={10000}
                 render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>
@@ -49,9 +53,7 @@ export default class Landing extends Component{
                                 <h3>Section 1</h3>
                             </div>
                             <div className="section">
-                                <div onClick={this.selectFirst}>Select First</div>
-                                <div onClick={this.selectSecond}>Select Second</div>
-                                <div onClick={this.selectThird}>Select Third</div>
+                                <Nav/>
                                 <Product product={this.state.active_product}/>
                             </div>
                         </ReactFullpage.Wrapper>
