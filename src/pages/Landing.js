@@ -45,23 +45,23 @@ export default class Landing extends Component{
                     <Slider/>
                 </Section>
                 <Section>
-                    <div>
-                    <AppBar position="relative">
-                        <Tabs value={this.state.active_product} onChange={this.handleProductChange}>
-                        <Tab label="Comics"/>
-                        <Tab label="Videos"/>
-                        <Tab label="Arts"/>
-                        </Tabs>
-                    </AppBar>
-                    </div>
-                    {/*<div className="navContainer">*/}
-                        {/*<div className="navBox" >*/}
-
-                                 {/*<a value={this.state.active_product} onChange={this.handleProductChange}>Comics</a>*/}
-                                 {/*<a  onChange={this.handleProductChange}>Videos</a>*/}
-                                 {/*<a  onChange={this.handleProductChange}>Arts</a>*/}
-                        {/*</div>*/}
+                    {/*<div>*/}
+                    {/*<AppBar position="relative">*/}
+                        {/*<Tabs value={this.state.active_product} onChange={this.handleProductChange}>*/}
+                        {/*<Tab label="Comics"/>*/}
+                        {/*<Tab label="Videos"/>*/}
+                        {/*<Tab label="Arts"/>*/}
+                        {/*</Tabs>*/}
+                    {/*</AppBar>*/}
                     {/*</div>*/}
+                    <div className="navContainer">
+                        <div className="navBox" >
+
+                                 <a value={this.state.active_product} onChange={this.handleProductChange}>Comics</a>
+                                 <a  onChange={this.handleProductChange}>Videos</a>
+                                 <a  onChange={this.handleProductChange}>Arts</a>
+                        </div>
+                    </div>
                     <Product product={this.state.active_product}/>
                 </Section>
             </SectionsContainer>
