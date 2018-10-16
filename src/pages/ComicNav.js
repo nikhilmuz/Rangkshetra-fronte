@@ -2,7 +2,6 @@ import React,{Component} from 'react'
 import '../css/New/comicnav.css'
 
 
-
 export default class ComicNav extends Component {
 
     render() {

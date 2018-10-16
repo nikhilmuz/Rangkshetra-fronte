@@ -9,9 +9,9 @@ export default class Nav extends Component {
             <div className="navContainer">
                 <div className="navBox">
                     <ul>
-                        <li onClick={this.selectFirst}>Select First</li>
-                         <li onClick={this.selectSecond}>Select Second</li>
-                        <li onClick={this.selectThird}>Select Third</li>
+                        <li>Select First</li>
+                         <li >Select Second</li>
+                        <li>Select Third</li>
                     </ul>
                 </div>
             </div>

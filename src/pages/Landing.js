@@ -1,23 +1,24 @@
 import React, {Component} from 'react'
-import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow'
+import {SectionsContainer, Section} from 'react-fullpage';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import AppBar from "@material-ui/core/AppBar";
-
+import ComicNav from "./ComicNav";
+import Slider from "./Slider";
 /**
  * @return {null}
  */
+
 function Product(props){
     switch(props.product){
         case 0:
-            return <div>First</div>;
+            return <ComicNav/>;
         case 1:
-            return <div>Second</div>;
+            return <div>dfghjk</div>;
         case 2:
-            return <div>Third</div>;
+            return <div>hi</div>;
         default:
-            return null;
+
     }
 }
 
@@ -29,39 +30,34 @@ export default class Landing extends Component{
         };
         this.handleProductChange = this.handleProductChange.bind(this);
     }
-    onLeave(origin, destination, direction) {
-        // arguments are mapped in order of fullpage.js callback arguments
-        // do something with the event
-    }
     handleProductChange(event, value){
         this.setState({active_product : value})
     }
     render(){
+        let fullpageOptions = {
+            anchors:['intro', 'products'],
+            scrollBar:false,
+            navigation:false,
+        };
         return(
-            <ReactFullpage
-                anchors={['', 'products']}
-                sectionsColor={['#282c34', '#ff5f45']}
-                onLeave={this.onLeave.bind(this)}
-                render={({ state, fullpageApi }) => {
-                    return (
-                        <ReactFullpage.Wrapper>
-                            <div className="section">
-                                <h3>Section 1</h3>
-                            </div>
-                            <div className="section">
-                                <AppBar position="relative">
-                                    <Tabs fullWidth value={this.state.active_product} onChange={this.handleProductChange}>
-                                        <Tab label="Daily Comics" />
-                                        <Tab label="Item Two" />
-                                        <Tab label="RangKshetra"/>
-                                    </Tabs>
-                                </AppBar>
-                                <Product product={this.state.active_product}/>
-                            </div>
-                        </ReactFullpage.Wrapper>
-                    );
-                }}
-            />
+            <SectionsContainer {...fullpageOptions}>
+                <Section>
+                    <Slider/>
+                </Section>
+                <Section>
+
+                    <div className="navContainer">
+                        <div className="navBox" >
+                            <ul>
+                                <li> <a value={this.state.active_product} onChange={this.handleProductChange}>Comics</a></li>
+                                <li> <a  onChange={this.handleProductChange}>Videos</a></li>
+                                <li> <a  onChange={this.handleProductChange}>Arts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <Product product={this.state.active_product}/>
+                </Section>
+            </SectionsContainer>
         );
     }
 }

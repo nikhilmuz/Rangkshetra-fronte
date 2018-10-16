@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/rangkshetra/Home'
-import Contact from "./pages/Contact";
+import Contact from "./pages/rangkshetra/Contact";
 import Login from './pages/rangkshetra/Login'
 import Signup from './pages/rangkshetra/Signup'
 import Dashboard from './pages/rangkshetra/Dashboard'
@@ -12,12 +12,14 @@ import PasswordChange from "./pages/rangkshetra/PasswordChange";
 import Landing from "./pages/Landing";
 import Nav from "./pages/Nav";
 import ComicNav from "./pages/ComicNav";
+import Slider from "./pages/Slider";
 
 export default class Routes extends Component{
     render(){
         return (
             <BrowserRouter>
             <Switch>
+                <Route exact path='/carousel' component={Slider} />
                 <Route exact path='/comics' component={ComicNav} />
                 <Route exact path='/nav' component={Nav} />
                 <Route exact path='/' component={Landing} />

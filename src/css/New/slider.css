@@ -1,0 +1,16 @@
+.slider{
+    position: relative;
+    height: 700px;
+    width: 700px;
+}
+
+.slide{
+
+}
+
+.image{
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 60%;
+}
