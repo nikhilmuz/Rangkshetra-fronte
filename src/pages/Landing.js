@@ -12,9 +12,9 @@ import Slider from "./Slider";
 function Product(props){
     switch(props.product){
         case 0:
-            return <ComicNav/>;
-        case 1:
             return <div>dfghjk</div>;
+        case 1:
+            return <div>1</div>;
         case 2:
             return <div>hi</div>;
         default:
@@ -45,16 +45,23 @@ export default class Landing extends Component{
                     <Slider/>
                 </Section>
                 <Section>
-
-                    <div className="navContainer">
-                        <div className="navBox" >
-                            <ul>
-                                <li> <a value={this.state.active_product} onChange={this.handleProductChange}>Comics</a></li>
-                                <li> <a  onChange={this.handleProductChange}>Videos</a></li>
-                                <li> <a  onChange={this.handleProductChange}>Arts</a></li>
-                            </ul>
-                        </div>
+                    <div>
+                    <AppBar position="relative">
+                        <Tabs value={this.state.active_product} onChange={this.handleProductChange}>
+                        <Tab label="Comics"/>
+                        <Tab label="Videos"/>
+                        <Tab label="Arts"/>
+                        </Tabs>
+                    </AppBar>
                     </div>
+                    {/*<div className="navContainer">*/}
+                        {/*<div className="navBox" >*/}
+
+                                 {/*<a value={this.state.active_product} onChange={this.handleProductChange}>Comics</a>*/}
+                                 {/*<a  onChange={this.handleProductChange}>Videos</a>*/}
+                                 {/*<a  onChange={this.handleProductChange}>Arts</a>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
                     <Product product={this.state.active_product}/>
                 </Section>
             </SectionsContainer>
