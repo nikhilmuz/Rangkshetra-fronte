@@ -12,7 +12,7 @@ import Slider from "./Slider";
 function Product(props){
     switch(props.product){
         case 0:
-            return <div>dfghjk</div>;
+            return <ComicNav/>
         case 1:
             return <div>1</div>;
         case 2:
