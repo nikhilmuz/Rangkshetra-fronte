@@ -1,7 +1,5 @@
-.slider{
-    position: relative;
-    height: 700px;
-    width: 700px;
+body{
+ background-color: #101010;
 }
 
 .slide{
