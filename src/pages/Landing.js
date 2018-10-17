@@ -5,6 +5,7 @@ import Tab from '@material-ui/core/Tab';
 import AppBar from "@material-ui/core/AppBar";
 import ComicNav from "./ComicNav";
 import Slider from "./Slider";
+import Comiccard from "./ComicCard";
 /**
  * @return {null}
  */
@@ -12,9 +13,9 @@ import Slider from "./Slider";
 function Product(props){
     switch(props.product){
         case 0:
-            return <div>dfghjk</div>;
+            return <ComicNav/>;
         case 1:
-            return <div>1</div>;
+            return <Comiccard/>;
         case 2:
             return <div>hi</div>;
         default:
@@ -47,7 +48,7 @@ export default class Landing extends Component{
                 <Section>
                     <div>
                     <AppBar position="relative">
-                        <Tabs fullWidth className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
+                        <Tabs fullWidth="20" className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
                         <Tab className="navBox" label="Comics"/>
                         <Tab className="navBox" label="Videos"/>
                         <Tab className="navBox" label="Arts"/>
