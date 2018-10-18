@@ -2,16 +2,16 @@
 body{
     background-color: #101010;
 }
+
 .comicNavBox {
     float: left;
     width: 100%;
 }
 
-
 .comicNavBox li {
     display: inline-block;
     font-size: 15px;
-    color: #1917ff;
+    color: #11ff12;
     text-align: center;
     text-decoration: none;
     padding-left: 10px;
@@ -21,8 +21,6 @@ body{
     cursor: pointer;
 
 }
-
-
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {

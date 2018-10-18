@@ -27,21 +27,19 @@ export default class Slider extends Component {
                       autoPlay={1}
                       interval={2000}
             >
-                <div className="image">
+                <div className="sliderImage">
                     <img src={IMG_4873} />
                 </div>
-                <div className="image">
+                <div className="sliderImage">
                     <img src={IMG_4871}  />
 
                </div>
-                <div className="image">
+                <div className="sliderImage">
                     <img src={IMG_4873} />
                 </div>
-                <div className="image">
+                <div className="sliderImage">
                     <img src={IMG_4871}  />
-
                 </div>
-
 
             </Carousel>
                 </div>
