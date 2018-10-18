@@ -7,7 +7,6 @@ export default class ComicPage extends Component {
     render() {
         return (
             <div>
-                    <hr/>
                 <h3>(genre)</h3>
                     <div className="imageContainer">
                         <div className="image">
