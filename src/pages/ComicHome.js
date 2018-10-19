@@ -29,12 +29,12 @@ export default class ComicHome extends Component {
     render() {
         return (
             <div>
-                <Tabs style={{backgroundColor:'#000000'}} value={this.state.active_product} onChange={this.handleProductChange}>
+                <Tabs value={this.state.active_product} onChange={this.handleProductChange}>
                     <Tab style={{color:'#ffffff'}} label="featured"/>
                     <Tab style={{color:'#ffffff'}} label="language"/>
                     <Tab style={{color:'#ffffff'}} label="genre"/>
-                    <Tab style={{color:'#ffffff'}} label=""/>
-
+                    <Tab style={{color:'#ffffff'}} label="featured"/>
+                    <Product product={this.state.active_product}/>
                 </Tabs>
             </div>
         )
