@@ -7,19 +7,19 @@ export default class ComicPage extends Component {
     render() {
         return (
             <div>
-                <h3>(genre)</h3>
+                <h2 style={{ color:'#ffffff'}}>(genre)</h2>
                     <div className="imageContainer">
                         <div className="image">
-                            <a>  <img   width={150} src={cover} />
+                            <a>  <img   width={50} src={cover} />
                                 <div className="text1">comic<br/> name</div></a>
                         </div>
-                        <div className="image"><img   width={150} src={cover} />
+                        <div className="image"><img   width={50} src={cover} />
                             <div className="text1">comic<br/> name</div>
                         </div>
-                        <div className="image"><img   width={150} src={cover} />
+                        <div className="image"><img   width={50} src={cover} />
                             <div className="text1">comic<br/> name</div>
                         </div>
-                        <div className="image"><img   width={150} src={cover} />
+                        <div className="image"><img   width={50} src={cover} />
                             <div className="text1">comic<br/> name</div>
                         </div>
                     </div>

@@ -46,6 +46,9 @@ export default class Landing extends Component{
             },
 
             headline: {
+                scrollButtons:'on',
+                indicatorColor:'#0000ff',
+                fontFamily:'"Helvetica Neue", Helvetica, Arial, sans-serif',
                 fontSize: '24px',
                 height: '100px',
                 border:'4px',
@@ -67,7 +70,7 @@ export default class Landing extends Component{
                     <div>
                     <AppBar className="navBar" position="relative">
                         <Tabs fullWidth="40" className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
-                       <Tab style={this.getStyles().headline}  label="Comics"/>
+                       <Tab style={this.getStyles().headline}  tabItemContainerStyle={{color:'#red200'}} label="Comics"/>
                         <Tab style={this.getStyles().headline}   label="Videos"/>
                         <Tab style={this.getStyles().headline}   label="Arts"/>
                         </Tabs>
