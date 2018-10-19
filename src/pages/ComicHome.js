@@ -6,11 +6,11 @@ import VideoCard from "./VideoCard";
 function Product(props){
     switch(props.product){
         case 0:
-            return <ComicPage/>;
+            return;
         case 1:
-            return <VideoCard/>;
+            return ;
         case 2:
-            return <div>hi</div>;
+            return ;
         default:
 
     }
