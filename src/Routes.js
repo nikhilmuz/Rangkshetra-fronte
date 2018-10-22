@@ -13,14 +13,16 @@ import Landing from "./pages/Landing";
 import Nav from "./pages/Nav";
 import ComicNav from "./pages/ComicNav";
 import Slider from "./pages/Slider";
-import ComicCard from "./pages/ComicCard";
+import ComicPage from "./pages/ComicPage";
+import ComicHome from "./pages/ComicHome"
 
 export default class Routes extends Component{
     render(){
         return (
             <BrowserRouter>
             <Switch>
-                <Route exact path='/comic' component={ComicCard} />
+                <Route exact path='/comicHome' component={ComicHome} />
+                <Route exact path='/comic' component={ComicPage} />
                 <Route exact path='/nav' component={Nav} />
                 <Route exact path='/' component={Landing} />
                 <Route path='/contact' component={Contact} />

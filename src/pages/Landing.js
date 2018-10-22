@@ -5,7 +5,11 @@ import Tab from '@material-ui/core/Tab';
 import AppBar from "@material-ui/core/AppBar";
 import ComicNav from "./ComicNav";
 import Slider from "./Slider";
-import Comiccard from "./ComicCard";
+import ComicPage from "./ComicPage";
+import VideoCard from "./VideoCard";
+import teal200 from '@material-ui/core/colors/teal'
+
+import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 /**
  * @return {null}
  */
@@ -13,9 +17,9 @@ import Comiccard from "./ComicCard";
 function Product(props){
     switch(props.product){
         case 0:
-            return <ComicNav/>;
+            return <ComicPage/>;
         case 1:
-            return <Comiccard/>;
+            return <VideoCard/>;
         case 2:
             return <div>hi</div>;
         default:
@@ -34,9 +38,26 @@ export default class Landing extends Component{
     handleProductChange(event, value){
         this.setState({active_product : value})
     }
+    getStyles(){
+        return {
+
+            tabs: {
+                backgroundColor: teal200,
+            },
+
+            headline: {
+                scrollButtons:'on',
+                indicatorColor:'#0000ff',
+                fontFamily:'"Helvetica Neue", Helvetica, Arial, sans-serif',
+                fontSize: '24px',
+                height: '100px',
+                border:'4px',
+            }
+        }
+    }
     render(){
         let fullpageOptions = {
-            anchors:['intro', 'products'],
+            anchors:['intro', 'products','blog'],
             scrollBar:false,
             navigation:false,
         };
@@ -47,11 +68,11 @@ export default class Landing extends Component{
                 </Section>
                 <Section>
                     <div>
-                    <AppBar position="relative">
-                        <Tabs fullWidth="20" className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
-                        <Tab className="navBox" label="Comics"/>
-                        <Tab className="navBox" label="Videos"/>
-                        <Tab className="navBox" label="Arts"/>
+                    <AppBar className="navBar" position="relative">
+                        <Tabs fullWidth="40" className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
+                       <Tab style={this.getStyles().headline}  tabItemContainerStyle={{color:'#red200'}} label="Comics"/>
+                        <Tab style={this.getStyles().headline}   label="Videos"/>
+                        <Tab style={this.getStyles().headline}   label="Arts"/>
                         </Tabs>
                     </AppBar>
                     </div>
@@ -65,6 +86,9 @@ export default class Landing extends Component{
                     {/*</div>*/}
                     <Product product={this.state.active_product}/>
 
+                </Section>
+                <Section>
+                    section 3
                 </Section>
             </SectionsContainer>
         );

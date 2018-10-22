@@ -17,7 +17,9 @@ export default class Slider extends Component {
         return (
             <div>
             <div className="slider-wrapper">
-                <h1 style={{ textAlign: 'center'}}>Title</h1>
+                <h1 style={{color:'#ffffff'}}>Title</h1>
+
+
             </div>
             <Carousel
                       infiniteLoop={1}
@@ -27,21 +29,19 @@ export default class Slider extends Component {
                       autoPlay={1}
                       interval={2000}
             >
-                <div className="image">
+                <div className="slideImage">
                     <img src={IMG_4873} />
                 </div>
-                <div className="image">
+                <div className="slideImage">
                     <img src={IMG_4871}  />
 
                </div>
-                <div className="image">
+                <div className="slideImage">
                     <img src={IMG_4873} />
                 </div>
-                <div className="image">
+                <div className="slideImage">
                     <img src={IMG_4871}  />
-
                 </div>
-
 
             </Carousel>
                 </div>
