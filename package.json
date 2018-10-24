@@ -11,7 +11,7 @@
     "react": "^16.6.0",
     "react-axios": "^2.0.1",
     "react-body-backgroundcolor": "^1.2.1",
-    "react-dom": "^16.5.2",
+    "react-dom": "^16.6.0",
     "react-dropzone": "^6.2.4",
     "react-fullpage": "^0.1.19",
     "react-infinite-scroller": "^1.2.2",
