@@ -9,22 +9,22 @@ export default class VideoCard extends Component {
                 <div className="videoContainer">
                     <h3>{this.props.name}</h3>
                     <div className="video">
-                        <iframe src="https://player.vimeo.com/video/295525907" width="320" height="" frameBorder="0"
+                        <iframe src="https://player.vimeo.com/video/295525907" width="" height="240" frameBorder="0"
                                 allowFullScreen/>
                             <div className="text1">Video<br/>name</div>
                     </div>
                     <div className="video">
-                        <iframe src="https://player.vimeo.com/video/295525907" width="320" height="" frameBorder="0"
+                        <iframe src="https://player.vimeo.com/video/295525907" width="" height="240" frameBorder="0"
                                 allowFullScreen/>
                         <div className="text1">Video<br/>name</div>
                     </div>
                     <div className="video">
-                        <iframe src="https://player.vimeo.com/video/295525907" width="320" height="" frameBorder="0"
+                        <iframe src="https://player.vimeo.com/video/295525907" width="" height="240" frameBorder="0"
                                 allowFullScreen/>
                         <div className="text1">Video<br/>name</div>
                     </div>
                     <div className="video">
-                        <iframe src="https://player.vimeo.com/video/295525907" width="320" height="" frameBorder="0"
+                        <iframe src="https://player.vimeo.com/video/295525907" width="" height="240" frameBorder="0"
                                 allowFullScreen/>
                         <div className="text1">Video<br/>name</div>
                     </div>

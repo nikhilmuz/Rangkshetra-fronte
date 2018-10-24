@@ -7,13 +7,12 @@ import ComicNav from "./ComicNav";
 import Slider from "./Slider";
 import ComicPage from "./ComicPage";
 import VideoCard from "./VideoCard";
-import teal200 from '@material-ui/core/colors/teal'
-
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 /**
  * @return {null}
  */
 
+// All the following keys are optional.
+// We try our best to provide a great default value.
 function Product(props){
     switch(props.product){
         case 0:
@@ -40,18 +39,17 @@ export default class Landing extends Component{
     }
     getStyles(){
         return {
-
             tabs: {
-                backgroundColor: teal200,
-            },
-
+                     },
             headline: {
                 scrollButtons:'on',
-                indicatorColor:'#0000ff',
+                indicatorColor:'secondary',
                 fontFamily:'"Helvetica Neue", Helvetica, Arial, sans-serif',
                 fontSize: '24px',
                 height: '100px',
                 border:'4px',
+                textColor:'secondary',
+                textTransform: 'unset',
             }
         }
     }
@@ -67,12 +65,12 @@ export default class Landing extends Component{
                     <Slider/>
                 </Section>
                 <Section>
-                    <div>
+                    <div >
                     <AppBar className="navBar" position="relative">
-                        <Tabs fullWidth="40" className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
-                       <Tab style={this.getStyles().headline}  tabItemContainerStyle={{color:'#red200'}} label="Comics"/>
-                        <Tab style={this.getStyles().headline}   label="Videos"/>
-                        <Tab style={this.getStyles().headline}   label="Arts"/>
+                        <Tabs fullWidth="40"  className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
+                       <Tab style={this.getStyles().headline}  inkBarStyle={{background: '#0000ff'}}  label="Comics"/>
+                        <Tab style={this.getStyles().headline}  inkBarStyle={{background: 'blue'}}   label="Videos"/>
+                        <Tab style={this.getStyles().headline}   inkBarStyle={{background: 'blue'}}  label="Arts"/>
                         </Tabs>
                     </AppBar>
                     </div>
