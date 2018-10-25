@@ -1,18 +1,17 @@
 import React, {Component} from 'react'
+import nav from './../css/New/nav.css'
 import {SectionsContainer, Section} from 'react-fullpage';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import AppBar from "@material-ui/core/AppBar";
+import {Tabs, Tab , AppBar} from '@material-ui/core';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import ComicNav from "./ComicNav";
 import Slider from "./Slider";
 import ComicPage from "./ComicPage";
 import VideoCard from "./VideoCard";
+import ComicHome from "./ComicHome";
 /**
  * @return {null}
  */
 
-// All the following keys are optional.
-// We try our best to provide a great default value.
 function Product(props){
     switch(props.product){
         case 0:
@@ -20,7 +19,7 @@ function Product(props){
         case 1:
             return <VideoCard/>;
         case 2:
-            return <div>hi</div>;
+            return <div>3rd</div>;
         default:
 
     }
@@ -37,19 +36,16 @@ export default class Landing extends Component{
     handleProductChange(event, value){
         this.setState({active_product : value})
     }
-    getStyles(){
+    Styles(){
         return {
-            tabs: {
-                     },
             headline: {
                 scrollButtons:'on',
-                indicatorColor:'secondary',
+                inkBarStyle:'#0000ff',
                 fontFamily:'"Helvetica Neue", Helvetica, Arial, sans-serif',
                 fontSize: '24px',
                 height: '100px',
                 border:'4px',
-                textColor:'secondary',
-                textTransform: 'unset',
+                textTransform:'unset'
             }
         }
     }
@@ -59,34 +55,37 @@ export default class Landing extends Component{
             scrollBar:false,
             navigation:false,
         };
-        return(
+        return (
             <SectionsContainer {...fullpageOptions}>
                 <Section>
                     <Slider/>
                 </Section>
                 <Section>
-                    <div >
-                    <AppBar className="navBar" position="relative">
-                        <Tabs fullWidth="40"  className="navContainer" value={this.state.active_product} onChange={this.handleProductChange}>
-                       <Tab style={this.getStyles().headline}  inkBarStyle={{background: '#0000ff'}}  label="Comics"/>
-                        <Tab style={this.getStyles().headline}  inkBarStyle={{background: 'blue'}}   label="Videos"/>
-                        <Tab style={this.getStyles().headline}   inkBarStyle={{background: 'blue'}}  label="Arts"/>
-                        </Tabs>
-                    </AppBar>
+                    <div>
+                        <AppBar position="relative">
+                                <MuiThemeProvider>
+                                    <Tabs fullWidth="40" className="navContainer" value={this.state.active_product}
+                                          onChange={this.handleProductChange}>
+                                        <Tab style={this.Styles().headline} label="Comics"/>
+                                        <Tab style={this.Styles().headline} label="Videos"/>
+                                        <Tab style={this.Styles().headline} label="Arts"/>
+                                    </Tabs>
+                                </MuiThemeProvider>
+                        </AppBar>
                     </div>
                     {/*<div className="navContainer">*/}
-                        {/*<div className="navBox" >*/}
+                    {/*<div className="navBox" >*/}
 
-                                 {/*<a value={this.state.active_product} onChange={this.handleProductChange}>Comics</a>*/}
-                                 {/*<a  onChange={this.handleProductChange}>Videos</a>*/}
-                                 {/*<a  onChange={this.handleProductChange}>Arts</a>*/}
-                        {/*</div>*/}
+                    {/*<a value={this.state.active_product} onChange={this.handleProductChange}>Comics</a>*/}
+                    {/*<a  onChange={this.handleProductChange}>Videos</a>*/}
+                    {/*<a  onChange={this.handleProductChange}>Arts</a>*/}
+                    {/*</div>*/}
                     {/*</div>*/}
                     <Product product={this.state.active_product}/>
 
                 </Section>
                 <Section>
-                    section 3
+                    <p style={{color:'#ffffff',textAlign:'center'}}>Blog</p>
                 </Section>
             </SectionsContainer>
         );

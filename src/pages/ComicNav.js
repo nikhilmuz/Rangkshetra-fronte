@@ -11,7 +11,7 @@ export default class ComicNav extends Component {
             <div className="comicNavBox">
                         <ul>
                             <li><a>New release</a></li>
-                            <li><a href={ComicPage}>genre</a></li>
+                            <li><a>genre</a></li>
                             <li><a>Popular</a></li>
                         </ul>
 

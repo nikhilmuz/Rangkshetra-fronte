@@ -1,17 +1,17 @@
 import React,{Component} from 'react'
 import {Tabs,Tab} from '@material-ui/core';
-import { withStyles} from '@material-ui/core/styles'
+import HomeIcon from '@material-ui/icons/Home'
+import comicHome from './../css/New/comicHome.css'
+import ComicGenre from "./ComicGenre";
 
 function Product(props){
     switch(props.product){
         case 0:
-            return;
+            return <div>1</div>;
         case 1:
-            return ;
+            return <div>2</div>;
         case 2:
-            return ;
-        case 3:
-            return ;
+            return <ComicGenre/>;
 
         default:
 
@@ -28,40 +28,29 @@ export default class ComicHome extends Component {
     handleProductChange(event, value){
         this.setState({active_product : value})
     }
-
     getStyles(){
         return {
-            tabs: {
-            },
-            tab: {
+            comicHead: {
 
-                indicatorColor:'secondary',
-
-                textColor:'#ffffff',
-                textTransform: 'unset',
+                fontColor:'#ffffff',
+                textTransform:'unset'
             }
         }
     }
     render() {
         return (
             <div>
-            <div>
-                <Tabs
-                    fullWidth value={this.state.active_product}
+                <Tabs fullWidth={1}
+                      className="comicNav"
+                      value={this.state.active_product}
                       onChange={this.handleProductChange}
-                        indicatorColor='secondary'
                 >
-                    <Tab inkBarStyle={{ background: "#000", height: "5px", marginTop: "-5px" }} label="featured"/>
-                    <Tab style={{color:'#ffffff'}} label="language"/>
-                    <Tab style={{color:'#ffffff'}} label="genre"/>
-                    <Tab style={{color:'#ffffff'}} label="featured"/>
-                    {/*<Product product={this.state.active_product}/>*/}
+                    <Tab style={this.getStyles().comicHead}  label="Featured"/>
+                    <Tab style={this.getStyles().comicHead}  label="Language"/>
+                    <Tab style={this.getStyles().comicHead}  label="Genre"/>
+                    <Tab style={this.getStyles().comicHead}  href='/' icon={<HomeIcon/>}/>
+                    <Product product={this.state.active_product}/>
                 </Tabs>
-            </div>
-
-
-
-
             </div>
         )
     }

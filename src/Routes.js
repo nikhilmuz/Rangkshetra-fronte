@@ -10,20 +10,21 @@ import About from './pages/rangkshetra/About'
 import Setting from "./components/Setting";
 import PasswordChange from "./pages/rangkshetra/PasswordChange";
 import Landing from "./pages/Landing";
-import Nav from "./pages/Nav";
-import ComicNav from "./pages/ComicNav";
 import Slider from "./pages/Slider";
 import ComicPage from "./pages/ComicPage";
 import ComicHome from "./pages/ComicHome"
+import VideoHome from "./pages/VideoHome"
+import ComicGenre from "./pages/ComicGenre";
 
 export default class Routes extends Component{
     render(){
         return (
             <BrowserRouter>
             <Switch>
+                <Route exact path='/comicHome/genre' component={ComicGenre} />
+                <Route exact path='/videoHome' component={VideoHome} />
                 <Route exact path='/comicHome' component={ComicHome} />
                 <Route exact path='/comic' component={ComicPage} />
-                <Route exact path='/nav' component={Nav} />
                 <Route exact path='/' component={Landing} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/login' component={Login} />

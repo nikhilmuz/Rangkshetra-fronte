@@ -1,9 +1,8 @@
 .video{
     display: inline-block;
     padding-top: 20px;
-    padding-left: 1%;
 
 }
 .videoContainer{
-    margin: 0 3% ;
+    margin-left: 1%;
 }

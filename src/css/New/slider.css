@@ -18,3 +18,45 @@ body{
     color:#ffffff;
     background-color: #ff0000;
 }
+.btnModal button{
+    display: inline-block;
+    background-color: #ff0000;
+    color :#ffffff;
+    padding: 10px 20px;
+    float: right;
+    border: 2px solid #000000;
+    box-shadow: #faebcc;
+}
+
+.btnModal{
+    padding: 50px;
+}
+
+
+.title h1{
+    float:left;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.loginBtn {
+    background-color: #6495ed;
+    color: #000101;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.loginContainer {
+    top: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 350px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

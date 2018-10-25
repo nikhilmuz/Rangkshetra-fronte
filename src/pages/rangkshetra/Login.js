@@ -64,6 +64,7 @@ export default class Login extends Component{
             <label><b>Password</b></label>
             <input onChange={this.handlePwdChange} type="password" placeholder="Enter Password" name="psw" required/>
                <button onClick={this.handleSubmit} type="submit" className="loginbtn">Login</button>
+
             <br/>
             <p align="center">Don't have an account? Create <a href='/signup'>here</a></p>
          </div>
