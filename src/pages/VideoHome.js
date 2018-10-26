@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import {Tab, Tabs} from "@material-ui/core";
-import ComicPage from "./ComicPage";
+import ComicCard from "./ComicCard";
 import videoHome from './../css/New/videoHome.css'
 
 function Product(props){

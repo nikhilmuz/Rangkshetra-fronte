@@ -5,7 +5,7 @@ import {Tabs, Tab , AppBar} from '@material-ui/core';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import ComicNav from "./ComicNav";
 import Slider from "./Slider";
-import ComicPage from "./ComicPage";
+import ComicCard from "./ComicCard";
 import VideoCard from "./VideoCard";
 import ComicHome from "./ComicHome";
 /**
@@ -15,7 +15,7 @@ import ComicHome from "./ComicHome";
 function Product(props){
     switch(props.product){
         case 0:
-            return <ComicPage/>;
+            return <ComicCard/>;
         case 1:
             return <VideoCard/>;
         case 2:

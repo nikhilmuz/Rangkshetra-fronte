@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {MuiThemeProvider, createMuiTheme } from '@material-ui/core'
-import blue from '@material-ui/core/colors'
+import blue from '@material-ui/core/colors/blue'
 
 
 const theme=createMuiTheme({
