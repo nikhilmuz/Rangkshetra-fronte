@@ -1,10 +1,10 @@
 import React,{Component} from 'react'
-import '../css/New/comicHorror.css'
-import cover from './../assets/cover.jpg'
+import '../../css/New/comicHorror.css'
+import cover from './../../assets/cover.jpg'
 
-import cover1 from './../assets/cover1.jpg'
-import cover2 from './../assets/cover2.jpg'
-import cover3 from './../assets/cover3.jpg'
+import cover1 from './../../assets/cover1.jpg'
+import cover2 from './../../assets/cover2.jpg'
+import cover3 from './../../assets/cover3.jpg'
 
 export default class Horror extends Component {
 

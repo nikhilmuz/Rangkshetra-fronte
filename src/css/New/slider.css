@@ -1,15 +1,22 @@
 body{
- background-color: #101010;
+ background-color: #ffffff;
 }
 
 .slide{
 
 }
+.carousel{
+    padding-top: 2.5%;
+    height: 620px;
+    max-height: 80%/*657px*/;
 
+}
 .slideImage{
     margin-left: auto;
     margin-right: auto;
-    max-width: 61%;
+    width: 100%;
+
+
 }
 
 .text2{
@@ -30,13 +37,6 @@ body{
 
 .btnModal{
     padding: 50px;
-}
-
-
-.title h1{
-    float:left;
-    display: inline-block;
-    text-transform: uppercase;
 }
 
 .loginBtn {
@@ -60,3 +60,15 @@ body{
     background-color: #ffffff;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+/*ul li ul {*/
+    /*background: orange;*/
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+    /*min-width: 5rem;*/
+    /*position: absolute;*/
+    /*transition: all 0.5s ease;*/
+    /*margin-top: 1rem;*/
+    /*left: 0;*/
+    /*display: none;*/
+/*}*/

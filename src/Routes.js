@@ -9,12 +9,12 @@ import Upload from './pages/rangkshetra/Upload'
 import About from './pages/rangkshetra/About'
 import Setting from "./components/Setting";
 import PasswordChange from "./pages/rangkshetra/PasswordChange";
-import Landing from "./pages/Landing";
-import Slider from "./pages/Slider";
-import ComicCard from "./pages/ComicCard";
-import ComicHome from "./pages/ComicHome"
-import VideoHome from "./pages/VideoHome"
-import ComicGenreNav from "./pages/ComicGenreNav";
+import Landing from "./pages/new/Landing";
+import Slider from "./components/new/Slider";
+import ComicLanding from "./pages/new/ComicLanding";
+import ComicHome from "./pages/new/ComicHome"
+import VideoHome from "./pages/new/VideoHome"
+import ComicGenreNav from "./pages/new/ComicGenreNav";
 
 export default class Routes extends Component{
     render(){
@@ -24,7 +24,7 @@ export default class Routes extends Component{
                 <Route exact path='/comicHome/genre' component={ComicGenreNav} />
                 <Route exact path='/videoHome' component={VideoHome} />
                 <Route exact path='/comicHome' component={ComicHome} />
-                <Route exact path='/comic' component={ComicCard} />
+                <Route exact path='/comic' component={ComicLanding} />
                 <Route exact path='/' component={Landing} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/login' component={Login} />

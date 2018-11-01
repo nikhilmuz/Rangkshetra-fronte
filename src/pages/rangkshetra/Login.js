@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import NavBar from '../../components/NavBar'
-import '../../css/login.css'
+import '../../css/rangkshetra/login.css'
 import Footer from './../../components/Footer'
 import axios from 'axios';
 import {API_ROOT} from "../../Config";

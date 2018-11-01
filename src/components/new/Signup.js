@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 import '../../css/rangkshetra/signup.css'
-import NavBar from '../../components/NavBar'
-import Footer from '../../components/Footer'
 import axios from "axios";
 import {API_ROOT} from "../../Config";
 
@@ -80,8 +78,6 @@ export default class Signup extends Component{
 
     render(){
         return(
-            <div>
-                <NavBar/>
                 <div className= "signup-box">
                     <h1> Sign up </h1>
                     <div className = "right">
@@ -95,7 +91,7 @@ export default class Signup extends Component{
 
                         <p align="center">   or <a href='/login'>login</a> instead.</p>
                     </div>
-                </div>
+
 
                 {/* <div className="left">
             <span className="loginwith">Sign in with<br/>social network</span>
@@ -104,8 +100,7 @@ export default class Signup extends Component{
             <button className="social-signin google">Log in with Gmail</button>
         </div>
         < div className = "or" > OR </div>*/}
-                <Footer/>
-            </div>
+                </div>
         )
     }
 }

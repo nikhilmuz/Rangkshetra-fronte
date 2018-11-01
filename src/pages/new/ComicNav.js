@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
-import '../css/New/comicnav.css'
-import ComicCard from "./ComicCard";
+import '../../css/New/comicnav.css'
+import ComicLanding from "./ComicLanding";
 
 
 export default class ComicNav extends Component {

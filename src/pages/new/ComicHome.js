@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import {Tabs,Tab} from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home'
-import comicHome from './../css/New/comicHome.css'
+import comicHome from '../../css/New/comicHome.css'
 import ComicGenreNav from "./ComicGenreNav";
 
 

@@ -21,19 +21,18 @@
 .image{
     position: relative;
     display: inline-block;
-    height: 232px;
-    margin-left: 2%;
+    height: 160px;
     margin-top: 2%;
 
 }
 
 .image img{
-    height:232px;
+    height:160px;
     margin-left: 2%;
 }
 
 .viewAll{
-    float:right;
+    margin-left:47%;
     color:#ffffff;
     cursor: pointer;
 }

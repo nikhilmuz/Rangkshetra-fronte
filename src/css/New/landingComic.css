@@ -1,0 +1,56 @@
+
+
+.langdropbtn  {
+    background-color: #c7cfff;
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.fa-arrow-down{
+    display: none;
+}
+.fa-arrow-down:hover{
+    display: contents;
+}
+.language {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+}
+
+.language-content {
+    float: none;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.language-content ul{
+    list-style-type: none;
+    float: left;
+}
+.language-content li{
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.language-content li:hover {
+    background-color: #f1f1f1;
+cursor:pointer;
+}
+
+.language:hover .language-content {
+    display: block;
+}
+
+.language:hover .dropbtn {
+    background-color: #238e82;
+}
+

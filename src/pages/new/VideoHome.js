@@ -1,17 +1,19 @@
 import React,{Component} from 'react'
 import {Tab, Tabs} from "@material-ui/core";
-import ComicCard from "./ComicCard";
-import videoHome from './../css/New/videoHome.css'
+import ComicLanding from "./ComicLanding";
+import videoHome from '../../css/New/videoHome.css'
+import VideoLanding from "./VideoLanding";
 
 function Product(props){
 
     switch(props.product){
         case 1:
-            return <div>
-                        hy
-            </div>;
+            return <VideoLanding/> ;
         case 2:
-            return <div>Second</div>;
+            return <div><iframe src="https://player.vimeo.com/video/295525907" width="320" height="" frameBorder="0"
+                                allowFullScreen/></div> ;
+        case 3:
+            return <VideoLanding/> ;
     }
 }
 
@@ -42,10 +44,12 @@ export default class VideoHome extends Component {
         return (
             <div className="videoBck">
                 <ul >
-                <li onClick={this.selectFirst}>Select First</li>
-                <li onClick={this.selectSecond}>Select Second</li>
-                    {/*<li className="videoTab" onClick={this.selectFirst}>Select First</li>*/}
+
+                <a><li onClick={this.selectFirst}>Featured</li></a>
+                    <a> <li onClick={this.selectSecond}>Jokes</li></a>
+                    <li onClick={this.selectThird}>Trailers</li>
                     {/*<li className="videoTab" onClick={this.selectSecond}>Select Second</li>*/}
+                    <a style={{fontSize:'20px'}} href='/'><li ><i className="fa fa-home"/></li></a>
                 </ul>
                 <Product product={this.state.active_product}/>
             </div>

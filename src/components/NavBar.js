@@ -1,6 +1,6 @@
 
 import React, {Component} from "react";
-import "./../css/navbar.css"
+import "../css/rangkshetra/navbar.css"
 import logo from "../assets/logo.png";
 import tbs_logo from "../assets/tbs_logo.png"
 

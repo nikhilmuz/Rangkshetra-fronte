@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import '../../css/contactus.css'
+import '../../css/rangkshetra/contactus.css'
 import NavBar from './../../components/NavBar'
 import Footer from './../../components/Footer'
 export default class Contact extends Component {
