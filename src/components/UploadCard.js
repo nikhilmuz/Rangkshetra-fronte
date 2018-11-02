@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "../css/feed.css"
+import "../css/rangkshetra/feed.css"
 import axios from "axios";
 import {API_ROOT} from "../Config";
 
