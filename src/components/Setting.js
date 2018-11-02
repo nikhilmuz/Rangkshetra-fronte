@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import './../css/setting.css'
+import '../css/rangkshetra/setting.css'
 import DashboardSidebar from './../components/DashboardSidebar'
 import Footer from './../components/Footer'
 import DashboardTitlebar from "../components/DashboardTitlebar"

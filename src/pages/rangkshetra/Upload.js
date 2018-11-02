@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import '../../css/upload.css'
+import '../../css/rangkshetra/upload.css'
 import DashboardSidebar from './../../components/DashboardSidebar'
 import Footer from './../../components/Footer'
 import Dropzone from 'react-dropzone';

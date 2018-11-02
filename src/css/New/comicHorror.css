@@ -1,0 +1,39 @@
+.genre a{
+    text-align: center;
+    width:7% ;
+    color:#ffffff;
+    margin-top: 100px;
+
+}
+
+.genreImageContainer{
+    float: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+}
+
+
+.genreImageContainer a{
+    color:#ffffff;
+}
+
+.text1{
+    text-align: center ;
+    color: #ff0000;
+}
+
+
+.genreImage{
+    position: relative;
+    display: inline-block;
+    height: 232px;
+    margin-left: 2%;
+    margin-top: 2%;
+
+}
+
+.genreImage img{
+    height:232px;
+    margin-left: 2%;
+}
