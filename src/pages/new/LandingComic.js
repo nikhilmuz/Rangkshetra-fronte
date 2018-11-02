@@ -1,6 +1,7 @@
 import React,{ Component, Fragment } from 'react'
-import landingComic from '../../css/New/landingComic.css'
-import Horror from "./Horror";
+import landingComic from './../../css/New/landingComic.css'
+import Login from "../../components/new/Login";
+import Image from "../../components/new/ComicCard";
 
 
 function Product(props){
@@ -22,32 +23,15 @@ function Product(props){
 }
 
 export default class LandingComic extends Component {
+
+
     constructor(props) {
         super(props);
         this.state = {
             active_product: 1,
         };
 
-        // this.state = {
-        //     options: [
-        //         {
-        //             name: 'language'
-        //         },
-        //         {
-        //             name: 'A',
-        //             value: 'a',
-        //         },
-        //         {
-        //             name: 'B',
-        //             value: 'b',
-        //         },
-        //         {
-        //             name: 'C',
-        //             value: 'c',
-        //         },
-        //     ],
-        //     value: '?',
-        // };
+
         this.selectFirst = this.selectFirst.bind(this);
         this.selectSecond = this.selectSecond.bind(this);
         this.selectThird = this.selectThird.bind(this);
@@ -89,35 +73,38 @@ export default class LandingComic extends Component {
             <div  style={{ paddingTop:'50px'}}>
                 <h1 style={{ textAlign:'center', position:'sticky'}}> Comics</h1>
 
-                <div className="language">
-                    <button className="langdropbtn"><i className="fa fa-angle-double-down"/> language<i className="fa fa-arrow-down"/></button>
+                {/*// <div className="language">*/}
+                {/*//     <button className="langdropbtn"><i className="fa fa-angle-double-down"/> language<i className="fa fa-arrow-down"/></button>*/}
+                {/*//     <div className="language-content">*/}
+                {/*//         <ul>*/}
+                {/*//             <li onClick={this.selectFirst}>Hindi</li>*/}
+                              {/*<li onClick={this.selectSecond}>English</li>*/}
+                             {/*<li onClick={this.selectThird} >Marathi</li>*/}
+                              {/*<li onClick={this.selectFourth}>Telugu</li>*/}
+                             {/*<li onClick={this.selectFifth}>Bengali</li>*/}
+                            {/*<li onClick={this.selectSixth} >Kannada</li>*/}
+                        {/*</ul>*/}
+                    {/*</div>*/}
+                {/*</div>*/}
+                <div className="language" id="#DivForHoverItem">
+                    <button className="langdropbtn">
+                        <i className="fa fa-language"/>  Language
+                        <div id="hiddenArrow">
+                        <i className="fa fa-angle-double-down"/>
+                        </div>
+                    </button>
                     <div className="language-content">
-                        <ul>
-                            <li onClick={this.selectFirst}>Hindi</li>
-                              <li onClick={this.selectSecond}>English</li>
-                             <li onClick={this.selectThird} >Marathi</li>
-                              <li onClick={this.selectFourth}>Telugu</li>
-                             <li onClick={this.selectFifth}>Bengali</li>
-                            <li onClick={this.selectSixth} >Kannada</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div className="language">
-                    <button className="langdropbtn"><i className="fa fa-language"/> language<i className="fa fa-arrow-down"/></button>
-                    <div className="language-content">
-                        <ul>
-                            <li onClick={this.selectFirst}>Hindi</li>
-                              <li onClick={this.selectSecond}>English</li>
-                             <li onClick={this.selectThird} >Marathi</li>
-                              <li onClick={this.selectFourth}>Telugu</li>
-                             <li onClick={this.selectFifth}>Bengali</li>
-                            <li onClick={this.selectSixth} >Kannada</li>
-                        </ul>
+                            <a onClick={this.selectFirst}>Hindi</a>
+                            <a onClick={this.selectSecond}>English</a>
+                            <a onClick={this.selectThird} >Marathi</a>
+                            <a onClick={this.selectFourth}>Telugu</a>
+                            <a onClick={this.selectFifth}>Bengali</a>
+                            <a onClick={this.selectSixth} >Kannada</a>
                     </div>
                 </div>
-                <Product product={this.state.active_product}/>
+                <Product  className="product"
+                    product={this.state.active_product}
+                />
 
             </div>
         )

@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import '../../css/New/comicLanding.css'
+import '../../css/New/comicLanding0.css'
 import cover from'../../assets/cover.jpg'
 
 export default class ComicLanding extends Component {

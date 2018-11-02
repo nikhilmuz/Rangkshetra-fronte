@@ -1,28 +1,33 @@
-
+#hiddenArrow{
+    display: none;
+}
+#DivForHoverItem:hover #hiddenArrow {
+    display:block;
+}
 
 .langdropbtn  {
+    width:100%;
     background-color: #c7cfff;
     color: #000000;
     padding: 16px;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .fa-arrow-down{
-    display: none;
 }
-.fa-arrow-down:hover{
-    display: contents;
-}
+
 .language {
     position: relative;
-    display: inline-block;
+    /*display: inline-block;*/
     float: right;
-    margin-right: 5%;
+    margin-right: 7%;
 }
 
 .language-content {
     float: none;
+    width: 100%;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -33,15 +38,14 @@
     list-style-type: none;
     float: left;
 }
-.language-content li{
+.language-content a{
     display: block;
-    text-align: center;
     color: black;
+    text-align: left;
     padding: 12px 16px;
-    text-decoration: none;
 }
 
-.language-content li:hover {
+.language-content a:hover {
     background-color: #f1f1f1;
 cursor:pointer;
 }
@@ -53,4 +57,6 @@ cursor:pointer;
 .language:hover .dropbtn {
     background-color: #238e82;
 }
-
+.product{
+    margin:50%;
+}
