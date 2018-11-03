@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/rangkshetra/Home'
 import Contact from "./pages/rangkshetra/Contact";
 import Login from './pages/rangkshetra/Login'
-import Signup from './pages/rangkshetra/Signup'
 import Dashboard from './pages/new/Dashboard'
 import Dashboard1 from './pages/rangkshetra/Dashboard1'
 import Upload1 from './pages/rangkshetra/Upload1'
@@ -31,7 +30,6 @@ export default class Routes extends Component{
                 <Route exact path='/' component={Landing} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/login' component={Login} />
-                <Route path='/signup' component={Signup} />
                 <Route path='/user/setting' component={Setting} />
                 <Route path='/user/password' component={PasswordChange} />
                 <Route exact path='/rangkshetra/' component={Home} />
