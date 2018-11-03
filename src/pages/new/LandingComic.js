@@ -58,12 +58,12 @@ export default class LandingComic extends Component {
                         </div>
                     </button>
                     <div className="language-content">
-                            <a onClick={() => this.handleLangChange("HIN")}>Hindi</a>
+                            <a onClick={() => this.handleLangChange("HIN")}>हिंदी</a>
                             <a onClick={() => this.handleLangChange("ENG")}>English</a>
-                            <a onClick={() => this.handleLangChange("MAR")}>Marathi</a>
-                            <a onClick={() => this.handleLangChange("TEL")}>Telugu</a>
-                            <a onClick={() => this.handleLangChange("BEN")}>Bengali</a>
-                            <a onClick={() => this.handleLangChange("KAN")}>Kannada</a>
+                            <a onClick={() => this.handleLangChange("MAR")}>मराठी</a>
+                            <a onClick={() => this.handleLangChange("TEL")}>తెలుగు</a>
+                            <a onClick={() => this.handleLangChange("BEN")}>বাঙালি</a>
+                            <a onClick={() => this.handleLangChange("KAN")}>ಕನ್ನಡ</a>
                     </div>
                 </div>
                     <InfiniteScroll
