@@ -8,33 +8,19 @@ import Signup from "./Signup";
 const LOGIN_API = 'users/login/';
 
 export default class Login extends Component{
-    state = {
-        open: false
-    };
-
-    onOpenModal = () => {
-        this.setState({ open: true });
-    };
-
-    onCloseModal = () => {
-        this.setState({ open: false });
-    };
 
     constructor(props) {
         super(props);
         this.state = {
+            open: false,
+            isLogin: true,
             username: '',
             password: '',
         };
         this.handleUsernameChange = this.handleUsernameChange.bind(this);
         this.handlePwdChange = this.handlePwdChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-    }
-    componentWillMount(){
-        let storageToken=localStorage.getItem('Token');
-        // if(storageToken!=null){
-        //     window.location.href='/rangkshetra/user/dashboard';
-        // }
+        this.toggleForm = this.toggleForm.bind(this);
     }
     handleUsernameChange(e){
         this.setState({username: e.target.value });
@@ -67,22 +53,57 @@ export default class Login extends Component{
     }
     render(){
         const { open } = this.state;
-        return(
-                <div className="loginContainer">
+        if (this.state.isLogin) {
+            return <div className="loginContainer">
 
-                    {/*<label htmlFor="Email Id" ><b>Email</b></label>*/}
-                   <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text" placeholder="Enter Email" name="email" required/>
-                    {/*<label><b>Password</b></label>*/}
-                    <i className="fa fa-lock"/> <input onChange={this.handlePwdChange} type="password" placeholder="Enter Password" name="psw" required/>
-                    <button onClick={this.handleSubmit} type="submit" className="loginBtn">Login</button>
-                    <br/>
-                    <p align="center"> <span >
-                    <button onClick={this.onOpenModal}>create here</button>
-                    <Modal open={open} onClose={this.onCloseModal} center>
-
-                    </Modal>
+                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                                                   placeholder="Enter Email"
+                                                   name="email" required/>
+                <br/>
+                <i className="fa fa-lock"/> <input onChange={this.handlePwdChange} type="password"
+                                                   placeholder="Enter Password"
+                                                   name="psw" required/>
+                <button onClick={this.handleSubmit} type="submit" className="loginBtn">Login</button>
+                <br/>
+                <p align="center"> <span>
+                    <a onClick={this.toggleForm}>create here</a>
                 </span></p>
-                </div>
-        )
+            </div>
+        } else {
+            return <div className="loginContainer">
+
+                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                                                   placeholder="First Name"
+                                                   required/>
+                <br/>
+                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                                                   placeholder="Last Name"
+                                                   required/>
+                <br/>
+                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                                                   placeholder="Phone Number"
+                                                   required/>
+                <br/>
+                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                                                   placeholder="Enter Email"
+                                                   required/>
+                <br/>
+                <i className="fa fa-lock"/> <input onChange={this.handlePwdChange} type="password"
+                                                   placeholder="Create Password"
+                                                   required/>
+                <br/>
+                <i className="fa fa-lock"/> <input onChange={this.handlePwdChange} type="password"
+                                                   placeholder="Confirm Password"
+                                                   required/>
+                <button onClick={this.handleSubmit} type="submit" className="loginBtn">Signup</button>
+                <br/>
+                <p align="center"> <span>
+                    <a onClick={this.toggleForm}>login here</a>
+                </span></p>
+            </div>
+        }
+    }
+    toggleForm() {
+        this.setState({isLogin: !this.state.isLogin});
     }
 }

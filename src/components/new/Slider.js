@@ -14,33 +14,10 @@ import Login from "../../components/new/Login";
 import LandingTopNav from "./LandingTopNav";
 
 export default class Slider extends Component {
-    // state = {
-    //     open: false
-    // };
-    //
-    // onOpenModal = () => {
-    //     this.setState({ open: true });
-    // };
-    //
-    // onCloseModal = () => {
-    //     this.setState({ open: false });
-    // };
-
-
-
     render() {
-        // const { open } = this.state;
         return (
             <div>
-                {/*<span className="btnModal">*/}
-                    {/*<button onClick={this.onOpenModal}>login</button>*/}
-                    {/*<Modal open={open} onClose={this.onCloseModal} center>*/}
-                       {/*<Login/>*/}
-                    {/*</Modal>*/}
-                {/*</span>*/}
-
-
-                <div className='carousel1'>
+                <div className='carousel'>
                     <Carousel
                     showThumbs={false}
                     dynamicHeight={1}
