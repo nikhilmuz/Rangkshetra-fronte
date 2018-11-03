@@ -5,7 +5,6 @@ import CardComponent from "../../components/new/ComicCard";
 import { Row, Col } from 'reactstrap';
 import Grid from "@material-ui/core/Grid";
 
-
 function Product(props){
 
     switch(props.product) {

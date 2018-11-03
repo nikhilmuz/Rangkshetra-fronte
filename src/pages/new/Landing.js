@@ -15,9 +15,10 @@ export default class Landing extends Component{
             anchors:['intro', 'products'],
             scrollBar:false,
             navigation:false,
+            sectionPaddingTop:'70px',
         };
         return (
-            <div>
+            <div >
             <LandingTopNav/>
             <SectionsContainer {...fullpageOptions}>
                 <Section>
@@ -26,6 +27,7 @@ export default class Landing extends Component{
                 <Section>
                     <LandingComic/>
                 </Section>
+
             </SectionsContainer>
             </div>
         );

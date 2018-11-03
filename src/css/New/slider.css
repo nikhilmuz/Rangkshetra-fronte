@@ -6,13 +6,17 @@ body{
 
 }
 .carousel{
-    height: 620px;
-    padding-top: 2.5%;
+    /*height: 620px;*/
+    /*height: 2%;*/
+
 
 }
 .slideImage{
     margin-left: auto;
     margin-right: auto;
+    width:100%;
+    /*max-height: 620px;*/
+
 }
 
 /*ul li ul {*/
@@ -48,7 +52,7 @@ body{
 }
 
 .loginBtn {
-    background-color: #4675ff;
+    background-color: #c7cfff;
     color: #ffffff;
     margin-right: auto;
     padding: 12px 16px;
@@ -59,23 +63,24 @@ body{
     /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
 }
 .loginContainer {
+
     top: 30px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
     width: 400px;
-    /*padding: 16px;*/
+    padding: 16px;
     background-color: #ffffff;
-    /*box-shadow: 0 10px 18px 0 rgba(0,0,0,0.3);*/
+    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
 }
 .fa-user{
     font-size:150%;
-    color:#19215F;
+    color: #1f2a9e;
 }
 .fa-lock{
     font-size:150%;
-    color:#19215F;
+    color: #1f2a9e;
 }
 .loginContainer input[type="text"],
 .loginContainer input[type="password"] {
@@ -100,7 +105,7 @@ body{
 
 .loginContainer input[type="text"]:focus,
 .loginContainer input[type="password"]:focus {
-    border-bottom: 2px solid #117a49;
+    border-bottom: 2px solid #c7cfff;
     color: #000000;
     transition: 0.2s ease;
 }
@@ -109,11 +114,11 @@ body{
     margin-top: 2px;
    alignment: center;
     margin-left: 40%;
-    background:#19215F;
+    background:#152a9e;
     border: 0;
     font-size: 19px;
     border-radius: 1px;
-    color: black;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
     transition: 0.1s ease;

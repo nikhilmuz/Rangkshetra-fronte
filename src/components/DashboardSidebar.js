@@ -36,12 +36,12 @@ export default class DashboardSidebar extends Component{
     }
     render(){
         return(
-            <div>
+            <div >
                 <div className = "navbar-collapse collapse sidebar">
                     <ul className = "sidebar-menu">
-                        <li className = "active"> <a href = "/rangkshetra/user/dashboard"> <i className = "fa fa-home"> </i>Dashboard</a> </li>
-                        <li> <a href ='/rangkshetra/user/upload'> <i className = "fa fa-upload"/>Upload</a></li>
-                        <li> <a href='/user/setting'><i className = "fa fa-gears"/>Preferences</a></li>
+                        <li className=""> <a href = "/user/dashboard"> <i className = "fa fa-home"> </i>Dashboard</a> </li>
+                        <li> <a href ='/user/upload'> <i className = "fa fa-upload"/>Upload</a></li>
+                        <li> <a href='/user/setting'><i className = "fa fa-gears"/>Settings</a></li>
                         <li onClick={this.logout}><a><i className = "fa fa-sign-out"/>Log Out</a></li>
                     </ul>
                 </div>
