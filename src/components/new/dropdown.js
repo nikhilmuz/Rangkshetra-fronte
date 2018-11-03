@@ -1,57 +1,57 @@
-import { Card, Col, Row,  Icon, Avatar } from 'antd';
-import React, {Component} from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-const list = [ {
-    id: '',
-    language: 'Kannada',
-    listOfCom: [
-        {
-            id:'',
-            title: '13 Days - 1',
-            cover: 'https://cdn.tbsplanet.com/dailycomics/covers/kan/13days1.jpg',
-            episodes:'No. of episodes: 15',
-            link:'https://www.tbsplanet.com/dailycomics/13days/1/kan/newepisodes.html',
-            target: '_blank'
-        },
-        {
-            id:'',
-            title: 'Sagar',
-            cover: 'https://cdn.tbsplanet.com/dailycomics/covers/kan/sagar.jpg',
-            episodes:'No. of episodes: 15',
-            link:'https://www.tbsplanet.com/dailycomics/sagar/1/tel/newepisodes.html',
-            target: '_blank'
-        }
-    ]
-}
-];
-class Card extends Component{
-    return(){
-        render(
-            <div style={{ background: '#ECECEC', padding: '30px' }}>
-                <Row gutter={16}>
-                    <Col span={8}>
-                        <Card
-                            style={{ width: 300 }}
-                            cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
-                            actions={[<Icon type="setting" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
-                        >
-                            <Meta
-                                avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                                title="Card title"
-                                description="This is the description"
-                            />
-                        </Card>,
-                    </Col>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>Card content</Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card title="Card title" bordered={false}>Card content</Card>
-                    </Col>
-                </Row>
-            </div>,
+const styles = {
+    card: {
+        maxWidth: 345,
+    },
+    media: {
+        height: 140,
+    },
+};
 
-        )
-    }
+function MediaCard(props) {
+    const { classes } = props;
+    return (
+        <Card className={classes.card}>
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    // height='10px'
+                    image="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dl-digital.com%2Fimages%2FAstronomy%2FGalaxies%2FM31-10-2007-16img-Final-cropNR2-1200px.jpg&f=1"
+                    title="eheyd nmsb ncbevwk"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                        galaxy
+                    </Typography>
+                    <Typography component="p">
+                        one is milky way
+                    </Typography>
+                </CardContent>
+            </CardActionArea>
+            <CardActions>
+                <Button size="small" color="primary">
+                    Share
+                </Button>
+                <Button size="small" color="primary">
+                    Learn More
+                </Button>
+            </CardActions>
+        </Card>
+    );
 }
-export default Card
+
+MediaCard.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(MediaCard);

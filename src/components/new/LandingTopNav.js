@@ -30,7 +30,7 @@ export default class LandingTopNav extends Component {
                     <li>
                         {/*// className="btnModal"*/}
 
-                    <a onClick={this.onOpenModal}>login/signup</a>
+                    <a onClick={this.onOpenModal}>Login / Sign up</a>
                     <Modal open={open} onClose={this.onCloseModal} center>
                        <Login/>
                     </Modal>

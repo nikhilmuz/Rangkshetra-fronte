@@ -16,13 +16,13 @@ export default class DashboardTitlebar extends Component{
 
 
                 <div>
-                    {/*<div className="logo">*/}
-                        {/*<a href='/'><img src={logo} alt="Rangkshetra" height="100px"/></a>*/}
-                    {/*</div>*/}
-                    {/*<div className='site-title' ><a ><span >Rangkshetra</span> </a></div>*/}
-                    {/*<div className="tbsLogo">*/}
-                        {/*<a href="http://www.tbsplanet.com"> <img src={tbs_logo} alt="TBS PLANET" height="80px"/></a>*/}
-                    {/*</div>*/}
+                    <div className="logo">
+                        <a href='/'><img src={logo} alt="Rangkshetra" height="100px"/></a>
+                    </div>
+                    <div className='site-title' ><a ><span >Rangkshetra</span> </a></div>
+                    <div className="tbsLogo">
+                        <a href="http://www.tbsplanet.com"> <img src={tbs_logo} alt="TBS PLANET" height="80px"/></a>
+                    </div>
                 </div>
         )
     }

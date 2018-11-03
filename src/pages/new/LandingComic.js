@@ -1,8 +1,5 @@
 import React,{ Component, Fragment } from 'react'
 import landingComic from './../../css/New/landingComic.css'
-import Login from "../../components/new/Login";
-import Image from "../../components/new/ComicCard";
-
 
 function Product(props){
 
@@ -39,14 +36,7 @@ export default class LandingComic extends Component {
         this.selectFifth = this.selectFifth.bind(this);
         this.selectSixth = this.selectSixth.bind(this);
     }
-    onLeave(origin, destination, direction) {
-        // arguments are mapped in order of fullpage.js callback arguments
-        // do something with the event
-    }
 
-    handleChange = (event) => {
-        this.setState({ value: event.target.value });
-    };
 
     selectFirst(){
         this.setState({active_product : 1})
@@ -70,14 +60,14 @@ export default class LandingComic extends Component {
     render() {
         // const { options, value } = this.state;
         return (
-            <div  style={{ paddingTop:'50px'}}>
-                <h1 style={{ textAlign:'center', position:'sticky'}}> Comics</h1>
+            <div  style={{ fontFamily:  'Helvetica, Arial, sans-serif',width:'100%' }}>
+                <h1 style={{ color:'#0000ff',textAlign:'center', }}> Comics</h1>
 
-                {/*// <div className="language">*/}
-                {/*//     <button className="langdropbtn"><i className="fa fa-angle-double-down"/> language<i className="fa fa-arrow-down"/></button>*/}
-                {/*//     <div className="language-content">*/}
-                {/*//         <ul>*/}
-                {/*//             <li onClick={this.selectFirst}>Hindi</li>*/}
+                 {/*<div className="language">*/}
+                     {/*<button className="langdropbtn"><i className="fa fa-angle-double-down"/> language<i className="fa fa-arrow-down"/></button>*/}
+                  {/*<div className="language-content">*/}
+                  {/*<ul>*/}
+                             {/*<li onClick={this.selectFirst}>Hindi</li>*/}
                               {/*<li onClick={this.selectSecond}>English</li>*/}
                              {/*<li onClick={this.selectThird} >Marathi</li>*/}
                               {/*<li onClick={this.selectFourth}>Telugu</li>*/}
@@ -106,6 +96,8 @@ export default class LandingComic extends Component {
                     product={this.state.active_product}
                 />
 
+                    {/*<div className="featured">featured</div>*/}
+                {/*<div className="latest">latest</div>*/}
             </div>
         )
     }

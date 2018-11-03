@@ -16,7 +16,7 @@ const theme=createMuiTheme({
         }
     },
     type: 'dark'
-});n
+});
 
 ReactDOM.render(
     <MuiThemeProvider theme={theme}>

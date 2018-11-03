@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import '../../css/New/slider.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import IMG_4871 from "./../../assets/IMG_4871.jpg";
-import IMG_4873 from "./../../assets/IMG_4873.JPG"
-import screentest2 from "./../../assets/screentest2.jpg"
-import TBSbanner00 from "./../../assets/TBSbanner00.jpg"
-import TBSbanner1 from "./../../assets/TBSbanner1.jpg"
-import TBSbanner2 from "./../../assets/TBSbanner2.jpg"
+import tbsbanner2 from "./../../assets/tbsbanner2.jpg"
+import tbsbanner1 from "./../../assets/tbsbanner1.jpg"
+import tbsbanner5 from "./../../assets/tbsbanner5.jpg"
+import tbsbanner3 from "./../../assets/tbsbanner3.jpg"
+import tbsbanner4 from "./../../assets/tbsbanner4.jpg"
+
+import tbsbanner6 from "./../../assets/tbsbanner6.jpg"
 import Modal from "react-responsive-modal";
 import Login from "../../components/new/Login";
 import LandingTopNav from "./LandingTopNav";
@@ -39,7 +40,7 @@ export default class Slider extends Component {
                 {/*</span>*/}
 
 
-                <div className='carousel'>
+                <div className='carousel1'>
                     <Carousel
                     showThumbs={false}
                     dynamicHeight={1}
@@ -47,32 +48,29 @@ export default class Slider extends Component {
                     autoPlay={0}
                     interval={2000}
                     infiniteLoop={2}
+
                 >
-                    <div className="slideImage">
-                        <img src={TBSbanner00} />
+                        <div className="slideImage">
+                        <img src={tbsbanner6} />
                     </div>
                         <div className="slideImage">
-                            <img src={screentest2 }  />
-                        </div>
-                    <div className="slideImage">
-                        <img src={TBSbanner1}  />
+                        <img src={tbsbanner5}  />
                     </div>
                         <div className="slideImage">
-                            <img src={IMG_4873} />
+                        <img src={tbsbanner2} />
+                    </div>
+                        <div className="slideImage">
+                        <img src={tbsbanner1}  />
+                        </div>
+                        <div className="slideImage">
+                            <img src={tbsbanner4} />
                         </div>
                     <div className="slideImage">
-                        <img src={TBSbanner2} />
+                        <img src={tbsbanner3} />
                     </div>
 
-
-                        <div className="slideImage">
-                            <img src={IMG_4871}  />
-                        </div>
-
-
-                </Carousel>
+                    </Carousel>
                 </div>
-
                 </div>
         );
     }

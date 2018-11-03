@@ -52,13 +52,13 @@ export default class Landing extends Component{
     // }
     render(){
         let fullpageOptions = {
-            anchors:['intro', 'products','blog'],
+            anchors:['intro', 'products'],
             scrollBar:false,
             navigation:false,
-            // sectionPaddingTop:'50px',
+            sectionPaddingTop:'70px',
         };
         return (
-            <div>
+            <div >
             <LandingTopNav/>
 
             <SectionsContainer {...fullpageOptions}>
@@ -87,11 +87,9 @@ export default class Landing extends Component{
                     {/*</div>*/}
                     {/*</div>*/}
                     {/*<Product product={this.state.active_product}/>*/}
-<LandingComic/>
+            <LandingComic/>
                 </Section>
-                <Section>
-                    <p style={{color:'#000000',textAlign:'center'}}>Blog</p>
-                </Section>
+
             </SectionsContainer>
             </div>
         );
