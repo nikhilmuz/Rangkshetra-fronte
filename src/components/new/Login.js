@@ -56,11 +56,11 @@ export default class Login extends Component{
         if (this.state.isLogin) {
             return <div className="loginContainer">
 
-                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                <i className="fa fa-user"/>&nbsp; <input onChange={this.handleUsernameChange} type="text"
                                                    placeholder="Enter Email"
                                                    name="email" required/>
                 <br/>
-                <i className="fa fa-lock"/> <input onChange={this.handlePwdChange} type="password"
+                <i className="fa fa-unlock"/>&nbsp; <input onChange={this.handlePwdChange} type="password"
                                                    placeholder="Enter Password"
                                                    name="psw" required/>
                 <button onClick={this.handleSubmit} type="submit" className="loginBtn">Login</button>
@@ -70,29 +70,29 @@ export default class Login extends Component{
                 </span></p>
             </div>
         } else {
-            return <div className="loginContainer">
+            return <div className="loginContainer" style={{width:'450px'}}>
 
-                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                <i className="fa fa-user"/> &nbsp;<input onChange={this.handleUsernameChange} type="text"
                                                    placeholder="First Name"
                                                    required/>
                 <br/>
-                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                <i className="fa fa-user"/> &nbsp;<input onChange={this.handleUsernameChange} type="text"
                                                    placeholder="Last Name"
                                                    required/>
                 <br/>
-                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                <i className="fa fa-mobile-phone"/>&nbsp;&nbsp; <input onChange={this.handleUsernameChange} type="text"
                                                    placeholder="Phone Number"
                                                    required/>
                 <br/>
-                <i className="fa fa-user"/> <input onChange={this.handleUsernameChange} type="text"
+                <i className="fa fa-user"/>&nbsp; <input onChange={this.handleUsernameChange} type="text"
                                                    placeholder="Enter Email"
                                                    required/>
                 <br/>
-                <i className="fa fa-lock"/> <input onChange={this.handlePwdChange} type="password"
+                <i className="fa fa-lock"/>&nbsp; <input onChange={this.handlePwdChange} type="password"
                                                    placeholder="Create Password"
                                                    required/>
                 <br/>
-                <i className="fa fa-lock"/> <input onChange={this.handlePwdChange} type="password"
+                <i className="fa fa-lock"/>&nbsp; <input onChange={this.handlePwdChange} type="password"
                                                    placeholder="Confirm Password"
                                                    required/>
                 <button onClick={this.handleSubmit} type="submit" className="loginBtn">Signup</button>
