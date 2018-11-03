@@ -4,24 +4,12 @@ import Login from "../../components/new/Login";
 import CardComponent from "../../components/new/ComicCard";
 import { Row, Col } from 'reactstrap';
 import Grid from "@material-ui/core/Grid";
+import InfiniteScroll from "react-infinite-scroller";
+import ArtCard from "../../components/ArtCard";
+import {API_ROOT} from "../../Config";
+import axios from "axios";
 
-function Product(props){
-
-    switch(props.product) {
-        case 'HIN':
-            return <div>HIN</div>;
-        case 'ENG':
-            return <div>ENG</div>;
-        case 'MAR':
-            return <div>MAR</div>;
-        case 'TEL':
-            return <div>TEL</div>;
-        case 'BEN':
-            return <div>BEN</div>;
-        case 'KAN':
-            return <div>KAN</div>;
-    }
-}
+const COMIC_FEED_API = 'comics/list/';
 
 export default class LandingComic extends Component {
 
@@ -29,35 +17,35 @@ export default class LandingComic extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            active_product: 'HIN',
+            selected_lang: 'HIN',
+            comics: [],
+            more: true,
+            next: null,
         };
-        this.selectFirst = this.selectFirst.bind(this);
-        this.selectSecond = this.selectSecond.bind(this);
-        this.selectThird = this.selectThird.bind(this);
-        this.selectFourth = this.selectFourth.bind(this);
-        this.selectFifth = this.selectFifth.bind(this);
-        this.selectSixth = this.selectSixth.bind(this);
+        this.loadMore = this.loadMore.bind(this);
+        this.handleLangChange = this.handleLangChange.bind(this);
     }
-    selectFirst(){
-        this.setState({active_product : 'HIN'})
-    }
-    selectSecond(){
-        this.setState({active_product : 'ENG'})
-    }
-    selectThird(){
-        this.setState({active_product : 'MAR'})
-    }
-    selectFourth(){
-        this.setState({active_product : 'TEL'})
-    }
-    selectFifth(){
-        this.setState({active_product : 'BEN'})
-    }
-    selectSixth(){
-        this.setState({active_product : 'KAN'})
+    handleLangChange(lang){
+        this.setState({
+            selected_lang : lang,
+            comics: [],
+            more: true,
+            url: null,
+        })
     }
 
     render() {
+        let items = [];
+        this.state.comics.map((comic, i) => {
+            items.push(
+                    <CardComponent
+                        cover={comic.cover}
+                        title={comic.title}
+                        desc={comic.episodes}
+                    />
+            );
+            return null;
+        });
         return (
             <div  style={{ paddingTop:'50px'}}>
                 <h1 style={{ textAlign:'center', position:'sticky'}}> Comics</h1>
@@ -69,70 +57,62 @@ export default class LandingComic extends Component {
                         </div>
                     </button>
                     <div className="language-content">
-                            <a onClick={this.selectFirst}>Hindi</a>
-                            <a onClick={this.selectSecond}>English</a>
-                            <a onClick={this.selectThird}>Marathi</a>
-                            <a onClick={this.selectFourth}>Telugu</a>
-                            <a onClick={this.selectFifth}>Bengali</a>
-                            <a onClick={this.selectSixth}>Kannada</a>
+                            <a onClick={() => this.handleLangChange("HIN")}>Hindi</a>
+                            <a onClick={() => this.handleLangChange("ENG")}>English</a>
+                            <a onClick={() => this.handleLangChange("MAR")}>Marathi</a>
+                            <a onClick={() => this.handleLangChange("TEL")}>Telugu</a>
+                            <a onClick={() => this.handleLangChange("BEN")}>Bengali</a>
+                            <a onClick={() => this.handleLangChange("KAN")}>Kannada</a>
                     </div>
                 </div>
-                <Product className="product"
-                    product={this.state.active_product}
-                />
                 <Grid container spacing={24} style={{margin:'0%'}}>
-                    <Grid item xs={6} sm={2} >
-                        <CardComponent
-                            cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"
-                            title="Ved"
-                            desc="Lorem Ipsum"
-                        />
-                    </Grid>
-                    <Grid item xs={6} sm={2} >
-                        <CardComponent
-                            cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"
-                            title="Ved"
-                            desc="Lorem Ipsum"
-                        />
-                    </Grid>
-                    <Grid item xs={6} sm={2} >
-                        <CardComponent
-                            cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"
-                            title="Ved"
-                            desc="Lorem Ipsum"
-                        />
-                    </Grid>
-                    <Grid item xs={6} sm={2} >
-                        <CardComponent
-                            cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"
-                            title="Ved"
-                            desc="Lorem Ipsum"
-                        />
-                    </Grid>
-                    <Grid item xs={6} sm={2} >
-                        <CardComponent
-                            cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"
-                            title="Ved"
-                            desc="Lorem Ipsum"
-                        />
-                    </Grid>
-                    <Grid item xs={6} sm={2} >
-                        <CardComponent
-                            cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"
-                            title="Ved"
-                            desc="Lorem Ipsum"
-                        />
-                    </Grid>
-                    <Grid item xs={6} sm={2} >
-                        <CardComponent
-                            cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"
-                            title="Ved"
-                            desc="Lorem Ipsum"
-                        />
-                    </Grid>
+                    <InfiniteScroll
+                        className="text-center"
+                        pageStart={0}
+                        loadMore={this.loadMore}
+                        hasMore={this.state.more}
+                        loader={<div className="loader" key={0}>Loading ...</div>}
+                        useWindow={false}
+                    >
+                        {items}
+                    </InfiniteScroll>
                 </Grid>
             </div>
         )
+    }
+    loadMore(){
+        let url;
+        if(this.state.next==null){
+            url=API_ROOT+COMIC_FEED_API+"?lang="+this.state.selected_lang;
+        }
+        else {
+            url=this.state.next;
+        }
+        axios
+            .get(
+                url,
+            )
+            .then(
+                response =>
+                {
+                    response.data.results.map((result) => {
+                        this.state.comics.push(result);
+                        return null;
+                    });
+                    if(response.data.next==null){
+                        this.setState({more: false});
+                    }
+                    else {
+                        this.setState({next: response.data.next});
+                    }
+                }
+            )
+            .catch(
+                error =>
+                {
+                    alert(error);
+                }
+            );
     }
 }
 

@@ -3,7 +3,6 @@ import './../../css/New/slider.css'
 import axios from 'axios';
 import {API_ROOT} from "../../Config";
 import Modal from "react-responsive-modal";
-import Signup from "./Signup";
 
 const LOGIN_API = 'users/login/';
 
@@ -40,6 +39,7 @@ export default class Login extends Component{
             .then(
                 response =>
                 {
+                    alert("Success")
                     // window.location.href = '/rangkshetra/user/dashboard';
                     // localStorage.setItem('Token', response.data.token );
                 }
