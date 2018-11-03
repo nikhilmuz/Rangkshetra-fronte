@@ -42,6 +42,7 @@ export default class LandingComic extends Component {
                         cover={comic.cover}
                         title={comic.title}
                         desc={comic.episodes}
+                        link={comic.link}
                     />
             );
             return null;
@@ -65,7 +66,6 @@ export default class LandingComic extends Component {
                             <a onClick={() => this.handleLangChange("KAN")}>Kannada</a>
                     </div>
                 </div>
-                <Grid container spacing={24} style={{margin:'0%'}}>
                     <InfiniteScroll
                         className="text-center"
                         pageStart={0}
@@ -74,9 +74,10 @@ export default class LandingComic extends Component {
                         loader={<div className="loader" key={0}>Loading ...</div>}
                         useWindow={false}
                     >
-                        {items}
+                        <Grid container spacing={24} style={{margin:'0%'}}>
+                            {items}
+                        </Grid>
                     </InfiniteScroll>
-                </Grid>
             </div>
         )
     }

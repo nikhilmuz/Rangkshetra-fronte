@@ -15,9 +15,12 @@ const styles = {
     },
 };
 function CardComponent(props) {
+    function openComic() {
+        window.location.href=props.link
+    }
         return (
             <Grid item xs={6} sm={2} >
-                <Card className="comicCard">
+                <Card onClick={openComic} className="comicCard">
                     <CardActionArea>
                         <CardMedia
                             className="comicCardMedia"
