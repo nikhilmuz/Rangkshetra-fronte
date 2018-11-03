@@ -80,7 +80,7 @@ export default class LandingComic extends Component {
                 <Product className="product"
                     product={this.state.active_product}
                 />
-                <Grid container spacing={24}>
+                <Grid container spacing={24} style={{margin:'0%'}}>
                     <Grid item xs={6} sm={2} >
                         <CardComponent
                             cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fno-limit.info%2Ftravel%2Fservices%2Fwp-content%2Fuploads%2F2014%2F12%2Fswitzerland_1.jpg&f=1"

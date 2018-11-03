@@ -15,7 +15,7 @@ export default class Landing extends Component{
             anchors:['intro', 'products'],
             scrollBar:false,
             navigation:false,
-            sectionPaddingTop:'60px',
+            sectionPaddingTop:'65px',
         };
         return (
             <div >
