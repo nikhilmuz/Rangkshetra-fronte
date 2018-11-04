@@ -1,16 +1,9 @@
-
 import React, {Component} from "react";
 import "../css/rangkshetra/dashboard.css"
 import logo from "../assets/logo.png";
 import tbs_logo from "../assets/tbs_logo.png"
 
 export default class DashboardTitlebar extends Component{
-    componentWillMount(){
-        let storageToken=localStorage.getItem('Token');
-        if(storageToken==null||storageToken===''){
-            window.location.href='/login';
-        }
-    }
     render(){
         return(
 

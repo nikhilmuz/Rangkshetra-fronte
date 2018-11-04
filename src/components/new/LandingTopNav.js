@@ -24,12 +24,7 @@ export default class LandingTopNav extends Component {
             <div className="landingTopNav" >
                 <img className="brandLogo" src={tbs_logo}  />
                 <ul>
-                  {/*<li><a>ABCD</a></li>*/}
-                    {/*<li><a>XYZA</a></li>*/}
-                    {/*<li><a>About</a></li>*/}
                     <li>
-                        {/*// className="btnModal"*/}
-
                     <a onClick={this.onOpenModal}>Login / Sign up</a>
                     <Modal open={open} onClose={this.onCloseModal} center>
                        <Login/>

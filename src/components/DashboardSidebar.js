@@ -23,7 +23,7 @@ export default class DashboardSidebar extends Component{
             .then(
                 response =>
                 {
-                    localStorage.removeItem('Token');
+                    localStorage.clear();
                     window.location.href='/'
                 }
             )

@@ -95,7 +95,7 @@ export default class Login extends Component{
                 <i className="fa fa-lock"/>&nbsp; <input onChange={this.handlePwdChange} type="password"
                                                    placeholder="Confirm Password"
                                                    required/>
-                <button onClick={this.handleSubmit} type="submit" className="loginBtn">Signup</button>
+                <button onClick={this.handleSubmit} type="submit" className="loginBtn">Sign up</button>
                 <br/>
                 <p align="center"> <span>
                     <a onClick={this.toggleForm}>login here</a>

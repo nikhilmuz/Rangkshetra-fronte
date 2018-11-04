@@ -2,8 +2,6 @@ import React,{Component} from 'react'
 import {Tabs,Tab} from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home'
 import comicHome from '../../css/New/comicHome.css'
-import ComicGenreNav from "./ComicGenreNav";
-
 
 function Product(props){
     switch(props.product){
@@ -11,9 +9,6 @@ function Product(props){
             return <div>1</div>;
         case 1:
             return <div>2</div>;
-        case 2:
-            return <ComicGenreNav/>;
-
         default:
 
     }
