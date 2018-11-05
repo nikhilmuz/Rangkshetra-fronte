@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee7bcb68-20e7-438c-985a-4b1adeb38954" name="Default Changelist" comment="Remove redundant files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/Upload.js" afterDir="false" />
+    <list default="true" id="ee7bcb68-20e7-438c-985a-4b1adeb38954" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/new/LandingTopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/new/LandingTopNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/new/ArtCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rangkshetra/Contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rangkshetra/Userhome.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,7 +104,7 @@
           <entry key="css" value="6" />
           <entry key="html" value="1" />
           <entry key="http" value="1" />
-          <entry key="js" value="91" />
+          <entry key="js" value="92" />
           <entry key="json" value="6" />
           <entry key="ts" value="2" />
         </counts>
@@ -110,7 +114,7 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="91" />
+          <entry key="JavaScript" value="92" />
           <entry key="Scratch" value="1" />
           <entry key="TypeScript" value="2" />
         </counts>
@@ -119,9 +123,9 @@
         <counts>
           <entry key="css" value="5" />
           <entry key="html" value="153" />
-          <entry key="js" value="6065" />
+          <entry key="js" value="6076" />
           <entry key="json" value="23" />
-          <entry key="txt" value="508" />
+          <entry key="txt" value="530" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -129,8 +133,8 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="153" />
           <entry key="JSON" value="23" />
-          <entry key="JavaScript" value="6065" />
-          <entry key="PLAIN_TEXT" value="508" />
+          <entry key="JavaScript" value="6076" />
+          <entry key="PLAIN_TEXT" value="530" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -256,14 +260,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="92">
+              <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -280,11 +281,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/user/Upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+            <state relative-caret-position="143">
+              <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -293,30 +294,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js">
+        <entry file="file://$PROJECT_DIR$/src/components/new/LandingTopNav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Contact.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Userhome.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+            <state relative-caret-position="122">
+              <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -469,7 +452,6 @@
         <option value="$PROJECT_DIR$/src/pages/new/LandingComic.js" />
         <option value="$PROJECT_DIR$/src/components/DashboardSidebar.js" />
         <option value="$PROJECT_DIR$/src/components/new/Login.js" />
-        <option value="$PROJECT_DIR$/src/components/new/LandingTopNav.js" />
         <option value="$PROJECT_DIR$/src/pages/new/Landing.js" />
         <option value="$PROJECT_DIR$/src/components/DashboardDrawer.js" />
         <option value="$PROJECT_DIR$/src/pages/new/Dashboard.js" />
@@ -481,8 +463,9 @@
         <option value="$PROJECT_DIR$/src/components/Userpage.js" />
         <option value="$PROJECT_DIR$/src/css/rangkshetra/upload.css" />
         <option value="$PROJECT_DIR$/src/css/rangkshetra/dashboard.css" />
-        <option value="$PROJECT_DIR$/src/Routes.js" />
         <option value="$PROJECT_DIR$/src/pages/user/Upload.js" />
+        <option value="$PROJECT_DIR$/src/components/new/LandingTopNav.js" />
+        <option value="$PROJECT_DIR$/src/Routes.js" />
       </list>
     </option>
   </component>
@@ -543,6 +526,19 @@
               <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="new" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="new" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -674,7 +670,7 @@
       <workItem from="1541268084382" duration="6490000" />
       <workItem from="1541352642134" duration="6107000" />
       <workItem from="1541377893326" duration="5268000" />
-      <workItem from="1541404277873" duration="13041000" />
+      <workItem from="1541404277873" duration="13375000" />
     </task>
     <task id="LOCAL-00001" summary="Signup and Logout API call">
       <created>1538603241500</created>
@@ -928,11 +924,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541418221108</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Comics Upload API Call">
+      <created>1541420654651</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1541420654651</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="421483000" />
+    <option name="totallyTimeSpent" value="421817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,7 +948,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="710" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1816828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -962,7 +964,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49925596" weight="0.32352942" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50446427" side_tool="true" weight="0.17617449" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4955357" visible="true" weight="0.316609" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4955357" weight="0.316609" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.56920415" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1007,7 +1009,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/src" />
     </ignored-roots>
-    <MESSAGE value="Feed API Call" />
     <MESSAGE value="Login Token Check" />
     <MESSAGE value="Feed API call" />
     <MESSAGE value="Delete API Call" />
@@ -1032,7 +1033,8 @@
     <MESSAGE value="Added Routes" />
     <MESSAGE value="Upload Page" />
     <MESSAGE value="Remove redundant files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove redundant files" />
+    <MESSAGE value="Comics Upload API Call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comics Upload API Call" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1241,16 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/new/LandingTopNav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="62" column="66" lean-forward="true" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/new/Landing.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1362,23 +1354,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/user/Upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+        <state relative-caret-position="143">
+          <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/user/Upload.js">
+    <entry file="file://$PROJECT_DIR$/src/components/new/LandingTopNav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+        <state relative-caret-position="122">
+          <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
