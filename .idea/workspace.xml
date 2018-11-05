@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee7bcb68-20e7-438c-985a-4b1adeb38954" name="Default Changelist" comment="Adde">
+    <list default="true" id="ee7bcb68-20e7-438c-985a-4b1adeb38954" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Userpage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DashboardSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashboardDrawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DashboardDrawer.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Setting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/new/LandingTopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/new/LandingTopNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/new/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/new/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/new/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/new/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/new/LandingComic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/new/LandingComic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/new/Dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/new/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/new/Landing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/new/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/new/Upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/rangkshetra/Dashboard1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rangkshetra/Dashboard1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rangkshetra/Dashboard1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rangkshetra/Upload1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rangkshetra/Upload1.js" afterDir="false" />
     </list>
@@ -110,7 +109,7 @@
           <entry key="css" value="3" />
           <entry key="html" value="1" />
           <entry key="http" value="1" />
-          <entry key="js" value="79" />
+          <entry key="js" value="89" />
           <entry key="json" value="6" />
           <entry key="ts" value="2" />
         </counts>
@@ -120,7 +119,7 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="79" />
+          <entry key="JavaScript" value="89" />
           <entry key="Scratch" value="1" />
           <entry key="TypeScript" value="2" />
         </counts>
@@ -129,9 +128,9 @@
         <counts>
           <entry key="css" value="5" />
           <entry key="html" value="153" />
-          <entry key="js" value="5278" />
+          <entry key="js" value="5383" />
           <entry key="json" value="23" />
-          <entry key="txt" value="405" />
+          <entry key="txt" value="427" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -139,8 +138,8 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="153" />
           <entry key="JSON" value="23" />
-          <entry key="JavaScript" value="5278" />
-          <entry key="PLAIN_TEXT" value="405" />
+          <entry key="JavaScript" value="5383" />
+          <entry key="PLAIN_TEXT" value="427" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -266,11 +265,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="23">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -278,13 +277,91 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/DashboardDrawer.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Userpage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="106" column="26" lean-forward="true" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+            <state relative-caret-position="129">
+              <caret line="138" column="50" lean-forward="true" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/new/Upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Upload1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Contact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Userhome.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Setting.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/new/Landing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -361,9 +438,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/new/ComicLanding.js" />
-        <option value="$PROJECT_DIR$/src/pages/new/ComicGenreNav.js" />
-        <option value="$PROJECT_DIR$/src/components/new/signup.js" />
         <option value="$PROJECT_DIR$/src/pages/new/dropdown.js" />
         <option value="$PROJECT_DIR$/src/components/new/DashboardTitlebar.js" />
         <option value="$PROJECT_DIR$/src/components/new/DashboardSidebar.js" />
@@ -382,7 +456,6 @@
         <option value="$PROJECT_DIR$/src/components/new/Signup.js" />
         <option value="$PROJECT_DIR$/src/pages/rangkshetra/Dashboard.js" />
         <option value="$PROJECT_DIR$/src/pages/rangkshetra/Upload.js" />
-        <option value="$PROJECT_DIR$/src/pages/new/Upload.js" />
         <option value="$PROJECT_DIR$/src/pages/new/theme.js" />
         <option value="$PROJECT_DIR$/src/css/New/landingtopnav.css" />
         <option value="$PROJECT_DIR$/src/css/rangkshetra/dashboard-sidebar.css" />
@@ -401,17 +474,21 @@
         <option value="$PROJECT_DIR$/src/components/DashboardTitlebar.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/pages/new/VideoHome.js" />
-        <option value="$PROJECT_DIR$/src/pages/new/Landing.js" />
-        <option value="$PROJECT_DIR$/src/Routes.js" />
         <option value="$PROJECT_DIR$/src/components/Snackbar.js" />
         <option value="$PROJECT_DIR$/src/components/Message.js" />
         <option value="$PROJECT_DIR$/src/pages/new/LandingComic.js" />
         <option value="$PROJECT_DIR$/src/components/DashboardSidebar.js" />
         <option value="$PROJECT_DIR$/src/components/new/Login.js" />
-        <option value="$PROJECT_DIR$/src/pages/new/Dashboard.js" />
-        <option value="$PROJECT_DIR$/src/pages/new/Dashboard.js" />
         <option value="$PROJECT_DIR$/src/components/new/LandingTopNav.js" />
+        <option value="$PROJECT_DIR$/src/pages/new/Landing.js" />
         <option value="$PROJECT_DIR$/src/components/DashboardDrawer.js" />
+        <option value="$PROJECT_DIR$/src/pages/new/Dashboard.js" />
+        <option value="$PROJECT_DIR$/src/pages/new/Dashboard.js" />
+        <option value="$PROJECT_DIR$/src/pages/new/Upload.js" />
+        <option value="$PROJECT_DIR$/src/pages/rangkshetra/Upload1.js" />
+        <option value="$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js" />
+        <option value="$PROJECT_DIR$/src/components/Setting.js" />
+        <option value="$PROJECT_DIR$/src/Routes.js" />
       </list>
     </option>
   </component>
@@ -505,7 +582,7 @@
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -623,7 +700,7 @@
       <workItem from="1541268084382" duration="6490000" />
       <workItem from="1541352642134" duration="6107000" />
       <workItem from="1541377893326" duration="5268000" />
-      <workItem from="1541404277873" duration="7407000" />
+      <workItem from="1541404277873" duration="9131000" />
     </task>
     <task id="LOCAL-00001" summary="Signup and Logout API call">
       <created>1538603241500</created>
@@ -842,11 +919,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541384225966</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Dashboard Drawer Final">
+      <created>1541415163670</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1541415163670</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="415849000" />
+    <option name="totallyTimeSpent" value="417573000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -921,7 +1005,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/src" />
     </ignored-roots>
-    <MESSAGE value="No Changes" />
     <MESSAGE value="Renamed Feed" />
     <MESSAGE value="Removed Testing Route" />
     <MESSAGE value="Upload API call" />
@@ -946,7 +1029,8 @@
     <MESSAGE value="Logout Handle" />
     <MESSAGE value="Removed Redundant Pages" />
     <MESSAGE value="Added Dashboard and indented properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Dashboard and indented properly" />
+    <MESSAGE value="Dashboard Drawer Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dashboard Drawer Final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -960,14 +1044,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Login.js" />
-    <entry file="file://$PROJECT_DIR$/src/css/rangkshetra/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="12" column="22" selection-end-line="53" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/new/Signup.js" />
     <entry file="file://$PROJECT_DIR$/src/css/rangkshetra/contactus.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -980,20 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Upload1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1564">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/new/Upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
-          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1092,13 +1154,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/new/ComicHome.js" />
-    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/404.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1117,20 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="42" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Dashboard1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Userhome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1187,16 +1228,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/new/Landing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/new/LandingComic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -1234,26 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/new/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/new/LandingTopNav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
@@ -1264,12 +1275,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/new/Landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Dashboard1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DashboardDrawer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="106" column="26" lean-forward="true" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+        <state relative-caret-position="-41">
+          <caret line="145" column="10" lean-forward="true" selection-end-line="155" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/new/Upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Upload1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/PasswordChange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Userhome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Setting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Userpage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="138" column="50" lean-forward="true" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
