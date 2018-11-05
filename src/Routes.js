@@ -8,7 +8,6 @@ import Setting from "./components/Setting";
 import PasswordChange from "./pages/rangkshetra/PasswordChange";
 import Landing from "./pages/new/Landing";
 import VideoHome from "./pages/new/VideoHome"
-import Upload from "./pages/new/Upload";
 import {PageNotFound} from "./pages/404";
 import LandingTopNav from "./components/new/LandingTopNav";
 

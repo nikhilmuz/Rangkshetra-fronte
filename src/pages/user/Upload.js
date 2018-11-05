@@ -1,21 +1,21 @@
 import React,{Component} from 'react'
 import '../../css/rangkshetra/upload.css'
-import Footer from './../../components/Footer'
 import Dropzone from 'react-dropzone';
-import DashboardTitlebar from "../../components/DashboardTitlebar"
 import axios from 'axios';
 
 import {API_ROOT} from "../../Config";
 import LandingTopNav from "../../components/new/LandingTopNav";
-const UPLOAD_API = 'arts/upload/';
+import Button from "@material-ui/core/Button";
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+const UPLOAD_API = 'comics/upload/';
 
 export default class Upload extends Component{
     constructor(props) {
         super(props);
         this.state = {
             caption: '',
-            art: [],
-    };
+            comics: [],
+        };
         this.handleCaptionChange = this.handleCaptionChange.bind(this);
         this.handleUpload = this.handleUpload.bind(this);
         this.handleDrop = this.handleDrop.bind(this);
@@ -28,14 +28,14 @@ export default class Upload extends Component{
         const reader = new FileReader();
         reader.onload = (event) => {
             console.log(event.target.result);
-            this.setState({art: files[0]});
+            this.setState({comics: files[0]});
         };
         reader.readAsDataURL(file);
     }
     handleUpload(){
         const payload = new FormData();
         payload.append('caption', this.state.caption);
-        payload.append('art', this.state.art);
+        payload.append('comics', this.state.comics);
         axios
             .post(
                 API_ROOT+UPLOAD_API,
@@ -64,27 +64,26 @@ export default class Upload extends Component{
     render(){
         return(
             <div>
-                <LandingTopNav/>
-                <div style={{paddingTop:'80px'}}>
                 <div className = "content-wrapper">
-                <div className = "content">
-                    <Dropzone
-                        multiple={false}
-                        accept="image/*"
-                        onDrop={this.handleDrop}
-                        style={{width: '100%'}}
-                    >
-                        <p id='filedrag' style={{ textAlign: 'center' }}> <i className = "fa fa-upload"/>  Drop your art here or click to upload!</p>
-                    </Dropzone>
+                    <div className = "content">
+                        <Dropzone
+                            multiple={false}
+                            accept="image/*"
+                            onDrop={this.handleDrop}
+                            style={{width: '100%'}}
+                        >
+                            <p id='filedrag' style={{ textAlign: 'center' }}> <i className = "fa fa-upload"/>  Drop your comics here or click to upload!</p>
+                        </Dropzone>
 
-                <br/>
-                    <p>Insert Caption Below: <input onChange={this.handleCaptionChange} type="text" name="caption" /></p>
-                    <button className="uploadbtn" onClick={this.handleUpload} type="upload">Upload</button>
+                        <br/>
+                        <p>Insert Caption Below: <input onChange={this.handleCaptionChange} type="text" name="caption" /></p>
+                        <Button onClick={this.handleUpload} variant="contained" color="default">
+                            Upload
+                            <CloudUploadIcon />
+                        </Button>
+                    </div>
                 </div>
             </div>
-                </div>
-            </div>
-
         );
     }
 }

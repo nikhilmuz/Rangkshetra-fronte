@@ -21,14 +21,6 @@ h1 { font-size: 40px; }
     float: left;
     width: 100%;
 }
-.content {
-    margin-left: 235px;
-    margin-top: 0;
-    min-height: 600px;
-    padding: 25px 20px 0 20px;
-    background-color: white;
-    overflow-x: hidden;
-}
 .tbsLogo{
     display: inline-block;
     float: right;
@@ -107,7 +99,6 @@ input[type=button]:hover {
         display: block !important;
     }
     .content-wrapper { float: none; }
-    .content { margin: 0; }
 }
 @media screen and (max-width: 767px) {
     .chart-box {

@@ -16,6 +16,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import SvgIcon from "@material-ui/core/SvgIcon";
+import Upload from "../pages/user/Upload";
 
 const drawerWidth = 240;
 
@@ -138,9 +139,14 @@ class Userpage extends React.Component {
                 </Drawer>
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
-                    <Typography paragraph>
-                        Welcome to the Dashboard
-                    </Typography>
+                    {
+                        this.props.page==="Dashboard"?
+                            <Typography paragraph>
+                                Welcome to the Dashboard
+                            </Typography>
+                            :
+                            <Upload/>
+                    }
                 </main>
             </div>
         );
