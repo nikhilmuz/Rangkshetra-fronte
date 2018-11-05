@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { AuthRoute } from 'react-router-auth';
 import Userpage from './components/Userpage'
-import Landing from "./pages/new/Landing";
+import Landing from "./pages/Landing";
 import VideoHome from "./pages/new/VideoHome"
 import {PageNotFound} from "./pages/404";
-import LandingTopNav from "./components/new/LandingTopNav";
+import LandingTopNav from "./components/LandingTopNav";
 
 const isLoggedIn = !(localStorage.getItem('Token') == null || localStorage.getItem('Token') === "");
 

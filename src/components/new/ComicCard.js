@@ -9,7 +9,6 @@ import Grid from "@material-ui/core/Grid/Grid";
 
 const styles = {
     card: {
-        maxWidth: 10,
     },
     media: {
     },
@@ -27,7 +26,6 @@ function CardComponent(props) {
                             component="img"
                             image={props.cover}
                             title={props.title}
-                            width="100px"
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">

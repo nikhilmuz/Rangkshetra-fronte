@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import tbs_logo from './../../assets/tbs_logo.png';
+import tbs_logo from '../assets/tbs_logo.png';
 import Modal from "react-responsive-modal";
-import Login from "./Login";
+import Login from "./new/Login";
 import {
     Collapse,
     DropdownItem,
