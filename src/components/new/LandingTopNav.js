@@ -59,7 +59,7 @@ export default class LandingTopNav extends Component {
     </UncontrolledDropdown>
                         :
         <li style={{color:'white'}}>
-            <a style={{color:'inherit'}} href="#" onClick={this.onOpenModal}>Login / Sign up</a>
+            <a style={{color:'inherit'}} href="#" onClick={this.onOpenModal}>Login</a>
             <Modal open={open} onClose={this.onCloseModal} center>
                 <Login/>
             </Modal>
