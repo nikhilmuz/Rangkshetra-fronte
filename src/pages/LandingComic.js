@@ -1,12 +1,12 @@
 import React,{ Component, Fragment } from 'react'
-import landingComic from './../../css/New/landingComic.css'
-import Login from "../../components/new/Login";
-import CardComponent from "../../components/new/ComicCard";
+import landingComic from '../css/New/landingComic.css'
+import Login from "../components/new/Login";
+import CardComponent from "../components/new/ComicCard";
 import { Row, Col } from 'reactstrap';
 import Grid from "@material-ui/core/Grid";
 import InfiniteScroll from "react-infinite-scroller";
-import ArtCard from "../../components/ArtCard";
-import {API_ROOT} from "../../Config";
+import ArtCard from "../components/ArtCard";
+import {API_ROOT} from "../Config";
 import axios from "axios";
 
 const COMIC_FEED_API = 'comics/list/';

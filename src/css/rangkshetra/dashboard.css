@@ -17,10 +17,6 @@ h1 { font-size: 40px; }
     margin: 10px 15px;
 	color: #f6f7ff;
 }
-.content-wrapper {
-    float: left;
-    width: 100%;
-}
 .tbsLogo{
     display: inline-block;
     float: right;
@@ -98,7 +94,6 @@ input[type=button]:hover {
         overflow-y: auto !important;
         display: block !important;
     }
-    .content-wrapper { float: none; }
 }
 @media screen and (max-width: 767px) {
     .chart-box {

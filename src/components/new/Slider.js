@@ -10,7 +10,7 @@ import tbsbanner5 from "./../../assets/tbsbanner5.jpg"
 import tbsbanner6 from "./../../assets/tbsbanner6.jpg"
 import Modal from "react-responsive-modal";
 import Login from "../../components/new/Login";
-import LandingTopNav from "./LandingTopNav";
+import LandingTopNav from "../LandingTopNav";
 
 export default class Slider extends Component {
     render() {

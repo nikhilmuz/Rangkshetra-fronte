@@ -1,9 +1,6 @@
 import React, {Component} from 'react'
-import nav from '../../css/New/nav.css'
 import {SectionsContainer, Section} from 'react-fullpage';
-import Slider from "../../components/new/Slider";
-import VideoLanding from "./VideoLanding";
-import LandingTopNav from "../../components/new/LandingTopNav";
+import Slider from "../components/new/Slider";
 import LandingComic from "./LandingComic";
 
 export default class Landing extends Component{

@@ -4,7 +4,7 @@ import Dropzone from 'react-dropzone';
 import axios from 'axios';
 
 import {API_ROOT} from "../../Config";
-import LandingTopNav from "../../components/new/LandingTopNav";
+import LandingTopNav from "../../components/LandingTopNav";
 import Button from "@material-ui/core/Button";
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import FormControl from "@material-ui/core/FormControl";
@@ -12,6 +12,9 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
+import Grid from "@material-ui/core/Grid/Grid";
+import Icon from '@material-ui/core/Icon';
+import Input from "@material-ui/core/Input/Input";
 const UPLOAD_API = 'comics/upload/';
 
 export default class Upload extends Component{
@@ -70,18 +73,18 @@ export default class Upload extends Component{
     }
     render(){
         return(
-            <div>
-                <div className = "content-wrapper">
-                    <div className = "content">
-                        <Dropzone
-                            multiple={false}
-                            accept="image/*"
-                            onDrop={this.handleDrop}
-                            style={{width: '100%'}}
-                        >
-                            <p id='filedrag' style={{ textAlign: 'center' }}> <i className = "fa fa-upload"/>  Drop your comics here or click to upload!</p>
-                        </Dropzone>
-                        <br/>
+            <div className = "text-center">
+                <Dropzone
+                    multiple={false}
+                    // accept="image/*"
+                    onDrop={this.handleDrop}
+                    style={{width: '100%'}}
+                >
+                    <div id='filedrag' style={{paddingTop:10}} >Drop your comics here<br/>or<br/>Upload <CloudUploadIcon /></div>
+                </Dropzone>
+                <br/>
+                <Grid container spacing={24}>
+                    <Grid item xs={12} sm={6}>
                         <TextField
                             fullWidth={true}
                             id="title-input"
@@ -89,17 +92,6 @@ export default class Upload extends Component{
                             value={this.state.title}
                             onChange={(e)=>{this.setState({title: e.target.value})}}
                             margin="normal"
-                        />
-                        <br/>
-                        <TextField
-                            fullWidth={true}
-                            id="desc-input"
-                            label="Description"
-                            placeholder="Description"
-                            multiline
-                            margin="normal"
-                            value={this.state.desc}
-                            onChange={(e)=>{this.setState({desc: e.target.value})}}
                         />
                         <br/>
                         <FormControl>
@@ -136,15 +128,24 @@ export default class Upload extends Component{
                                 <MenuItem value={'HNM'}>History and Mythology</MenuItem>
                             </Select>
                         </FormControl>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <Button onClick={this.handleUpload} variant="contained" color="default">
-                            Upload
-                            <CloudUploadIcon />
-                        </Button>
-                    </div>
-                </div>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <TextField
+                            fullWidth={true}
+                            id="desc-input"
+                            label="Description"
+                            placeholder="Description"
+                            multiline
+                            margin="normal"
+                            value={this.state.desc}
+                            onChange={(e)=>{this.setState({desc: e.target.value})}}
+                        />
+                    </Grid>
+                </Grid>
+                <br/>
+                <Button onClick={this.handleUpload} variant="contained" color="default">
+                    Submit
+                </Button>
             </div>
         );
     }
