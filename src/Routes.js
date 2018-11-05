@@ -3,12 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { AuthRoute } from 'react-router-auth';
 import Contact from "./pages/rangkshetra/Contact";
 import Userpage from './components/Userpage'
-import Upload1 from './pages/rangkshetra/Upload1'
 import Setting from "./components/Setting";
 import PasswordChange from "./pages/rangkshetra/PasswordChange";
 import Landing from "./pages/new/Landing";
 import VideoHome from "./pages/new/VideoHome"
-import Upload from "./pages/new/Upload";
 import {PageNotFound} from "./pages/404";
 import LandingTopNav from "./components/new/LandingTopNav";
 
@@ -28,7 +26,6 @@ export default class Routes extends Component{
                 {/*<Route path='/contact' component={Contact} />*/}
                 {/*<Route path='/user/setting' component={Setting} />*/}
                 {/*<Route path='/user/password' component={PasswordChange} />*/}
-                {/*<Route path='/rangkshetra/user/upload' component={Upload1} />*/}
                 <Route path='*' component={PageNotFound} />
             </Switch>
             </BrowserRouter>

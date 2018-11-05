@@ -18,18 +18,3 @@
 
     box-shadow: inset 0 3px 4px #888;
 }
-.uploadbtn{
-    background-color: #6495ed;
-    color: #000101;
-    padding: 10px 15px;
-    border: 1px;
-    cursor: pointer;
-
-    opacity: 0.9;
-    font-size: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.uploadbtn:hover {
-    opacity: 1;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-}
