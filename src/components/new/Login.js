@@ -55,7 +55,6 @@ export default class Login extends Component{
         const { open } = this.state;
         if (this.state.isLogin) {
             return <div className="loginContainer">
-
                 <i className="fa fa-user"/>&nbsp; <input onChange={this.handleUsernameChange} type="text"
                                                    placeholder="Enter Email"
                                                    name="email" required/>
