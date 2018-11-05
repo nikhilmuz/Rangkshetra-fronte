@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import tbs_logo from './../../assets/tbs_logo.png'
+import tbs_logo from './../../assets/tbs_logo.png';
 import Modal from "react-responsive-modal";
 import Login from "./Login";
 import {
@@ -32,8 +32,6 @@ export default class LandingTopNav extends Component {
             <Navbar
                 style={{backgroundColor:'#19215F', zIndex:100}}
                 expand="md"
-                light={true}
-                fixed={true}
             >
                 <NavbarBrand href="/">
                     <img style={{width: '10%', paddingLeft:'10px'}} src={tbs_logo} alt="TBS planet" />
@@ -51,7 +49,7 @@ export default class LandingTopNav extends Component {
         </DropdownToggle>
         <DropdownMenu right>
             <DropdownItem href="/user/dashboard">
-                My Account
+                Dashboard
             </DropdownItem>
             <DropdownItem divider />
             <DropdownItem href="#">

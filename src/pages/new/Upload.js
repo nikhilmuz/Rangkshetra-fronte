@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import '../../css/rangkshetra/upload.css'
-import DashboardSidebar from './../../components/DashboardSidebar'
+import DashboardSidebar from '../../components/DashboardDrawer'
 import Footer from './../../components/Footer'
 import Dropzone from 'react-dropzone';
 import DashboardTitlebar from "../../components/DashboardTitlebar"

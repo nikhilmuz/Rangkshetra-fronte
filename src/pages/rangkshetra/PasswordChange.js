@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import '../../css/rangkshetra/passwordchange.css'
-import DashboardSidebar from './../../components/DashboardSidebar'
+import DashboardSidebar from '../../components/DashboardDrawer'
 import Footer from './../../components/Footer'
 import DashboardTitlebar from "../../components/DashboardTitlebar"
 

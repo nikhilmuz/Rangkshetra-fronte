@@ -27,7 +27,8 @@
     "react-simple-dropdown": "^3.2.3",
     "reactstrap": "^6.5.0",
     "save": "^2.3.2",
-    "yarn": "^1.12.1"
+    "yarn": "^1.12.1",
+    "prop-types": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
