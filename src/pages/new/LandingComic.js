@@ -18,6 +18,7 @@ export default class LandingComic extends Component {
         super(props);
         this.state = {
             selected_lang: 'HIN',
+            selected_lang_name : 'हिंदी',
             comics: [],
             more: true,
             next: null,
@@ -25,9 +26,10 @@ export default class LandingComic extends Component {
         this.loadMore = this.loadMore.bind(this);
         this.handleLangChange = this.handleLangChange.bind(this);
     }
-    handleLangChange(lang){
+    handleLangChange(lang,lang_name){
         this.setState({
             selected_lang : lang,
+            selected_lang_name : lang_name,
             comics: [],
             more: true,
             url: null,
@@ -48,22 +50,22 @@ export default class LandingComic extends Component {
             return null;
         });
         return (
-            <div  style={{ paddingTop:'50px'}}>
+            <div>
                 <h1 style={{ textAlign:'center', position:'sticky'}}> Comics</h1>
                 <div className="language" id="#DivForHoverItem">
                     <button className="langdropbtn">
-                        <i className="fa fa-language"/> Language
+                        <i className="fa fa-language"/> {this.state.selected_lang_name}
                         <div id="hiddenArrow">
                         <i className="fa fa-angle-double-down"/>
                         </div>
                     </button>
                     <div className="language-content">
-                            <a onClick={() => this.handleLangChange("HIN")}>हिंदी</a>
-                            <a onClick={() => this.handleLangChange("ENG")}>English</a>
-                            <a onClick={() => this.handleLangChange("MAR")}>मराठी</a>
-                            <a onClick={() => this.handleLangChange("TEL")}>తెలుగు</a>
-                            <a onClick={() => this.handleLangChange("BEN")}>বাঙালি</a>
-                            <a onClick={() => this.handleLangChange("KAN")}>ಕನ್ನಡ</a>
+                            <a onClick={() => this.handleLangChange("HIN","हिंदी")}>हिंदी</a>
+                            <a onClick={() => this.handleLangChange("ENG","English")}>English</a>
+                            <a onClick={() => this.handleLangChange("MAR","मराठी")}>मराठी</a>
+                            <a onClick={() => this.handleLangChange("TEL","తెలుగు")}>తెలుగు</a>
+                            <a onClick={() => this.handleLangChange("BEN","বাঙালি")}>বাঙালি</a>
+                            <a onClick={() => this.handleLangChange("KAN","ಕನ್ನಡ")}>ಕನ್ನಡ</a>
                     </div>
                 </div>
                     <InfiniteScroll
@@ -74,7 +76,7 @@ export default class LandingComic extends Component {
                         loader={<div className="loader" key={0}>Loading ...</div>}
                         useWindow={false}
                     >
-                        <Grid container spacing={24} style={{margin:'0%'}}>
+                        <Grid container xs={10} sm={10} spacing={24} style={{margin:'0%', paddingLeft:'5%', paddingRight:'5%'}}>
                             {items}
                         </Grid>
                     </InfiniteScroll>

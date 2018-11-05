@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import {Tab, Tabs} from "@material-ui/core";
-import ComicLanding from "./ComicLanding";
 import videoHome from '../../css/New/videoHome.css'
 import VideoLanding from "./VideoLanding";
 

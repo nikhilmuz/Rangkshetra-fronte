@@ -39,15 +39,17 @@ export default class Login extends Component{
             .then(
                 response =>
                 {
-                    alert("Success")
-                    // window.location.href = '/rangkshetra/user/dashboard';
-                    // localStorage.setItem('Token', response.data.token );
+                    localStorage.setItem('Token', response.data.token );
+                    localStorage.setItem('short_name', response.data.short_name );
+                    localStorage.setItem('full_name', response.data.full_name );
+                    localStorage.setItem('email', response.data.email );
+                    window.location.href = '/user/dashboard';
                 }
             )
             .catch(
                 error =>
                 {
-                    alert(error);
+                    alert('Incorrect Credentials');
                 }
             )
     }
@@ -55,7 +57,6 @@ export default class Login extends Component{
         const { open } = this.state;
         if (this.state.isLogin) {
             return <div className="loginContainer">
-
                 <i className="fa fa-user"/>&nbsp; <input onChange={this.handleUsernameChange} type="text"
                                                    placeholder="Enter Email"
                                                    name="email" required/>
@@ -95,7 +96,7 @@ export default class Login extends Component{
                 <i className="fa fa-lock"/>&nbsp; <input onChange={this.handlePwdChange} type="password"
                                                    placeholder="Confirm Password"
                                                    required/>
-                <button onClick={this.handleSubmit} type="submit" className="loginBtn">Signup</button>
+                <button onClick={this.handleSubmit} type="submit" className="loginBtn">Sign up</button>
                 <br/>
                 <p align="center"> <span>
                     <a onClick={this.toggleForm}>login here</a>
