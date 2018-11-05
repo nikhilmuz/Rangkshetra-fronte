@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import './../../css/New/slider.css'
 import axios from 'axios';
 import {API_ROOT} from "../../Config";
-import Modal from "react-responsive-modal";
 
 const LOGIN_API = 'users/login/';
 
@@ -11,7 +10,6 @@ export default class Login extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            open: false,
             isLogin: true,
             username: '',
             password: '',

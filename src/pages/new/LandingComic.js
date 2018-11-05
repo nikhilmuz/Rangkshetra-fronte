@@ -41,6 +41,7 @@ export default class LandingComic extends Component {
         this.state.comics.map((comic, i) => {
             items.push(
                     <CardComponent
+                        key={i}
                         cover={comic.cover}
                         title={comic.title}
                         desc={comic.episodes}

@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import '../../css/rangkshetra/upload.css'
-import DashboardSidebar from './../../components/DashboardSidebar'
 import Footer from './../../components/Footer'
 import Dropzone from 'react-dropzone';
 import DashboardTitlebar from "../../components/DashboardTitlebar"
@@ -65,7 +64,6 @@ export default class Upload1 extends Component{
         return(
             <div>
                 <DashboardTitlebar/>
-                <DashboardSidebar/>
                 <div className = "content-wrapper">
                 <div className = "content">
                     <Dropzone

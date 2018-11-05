@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { AuthRoute } from 'react-router-auth';
 import Contact from "./pages/rangkshetra/Contact";
-import Dashboard from './pages/new/Dashboard'
-import Dashboard1 from './pages/rangkshetra/Dashboard1'
+import Userpage from './components/Userpage'
 import Upload1 from './pages/rangkshetra/Upload1'
 import Setting from "./components/Setting";
 import PasswordChange from "./pages/rangkshetra/PasswordChange";
@@ -23,14 +22,13 @@ export default class Routes extends Component{
             <BrowserRouter>
             <Switch>
                 <Route exact path='/' component={() => (<Landing authenticated={isLoggedIn} />)}/>
-                <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/user/dashboard' component={Dashboard} />
-                <Route exact path='/user/upload' component={Upload} />
-                <Route exact path='/videoHome' component={VideoHome} />
-                <Route path='/contact' component={Contact} />
-                <Route path='/user/setting' component={Setting} />
-                <Route path='/user/password' component={PasswordChange} />
-                <Route path='/rangkshetra/user/dashboard' component={Dashboard1} />
-                <Route path='/rangkshetra/user/upload' component={Upload1} />
+                <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/user/dashboard' component={()=>(<Userpage page="Dashboard"/>)} />
+                <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/user/upload' component={()=>(<Userpage page="Upload"/>)} />
+                {/*<Route exact path='/videoHome' component={VideoHome} />*/}
+                {/*<Route path='/contact' component={Contact} />*/}
+                {/*<Route path='/user/setting' component={Setting} />*/}
+                {/*<Route path='/user/password' component={PasswordChange} />*/}
+                {/*<Route path='/rangkshetra/user/upload' component={Upload1} />*/}
                 <Route path='*' component={PageNotFound} />
             </Switch>
             </BrowserRouter>
