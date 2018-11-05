@@ -7,8 +7,7 @@ export default class Dashboard extends Component{
     render(){
         return (
             <div>
-                <LandingTopNav/>
-                <div style={{paddingTop:'80px'}}>
+                <div>
                     <DashboardSidebar/>
                     <div className="content-wrapper">
                         <div className="content">

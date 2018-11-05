@@ -23,9 +23,8 @@ export default class Routes extends Component{
             <BrowserRouter>
             <Switch>
                 <Route exact path='/' component={() => (<Landing authenticated={isLoggedIn} />)}/>
-                <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/user/dashboard' component={Landing} />
+                <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/user/dashboard' component={Dashboard} />
                 <Route exact path='/user/upload' component={Upload} />
-                <Route exact path='/user/dashboard' component={Dashboard} />
                 <Route exact path='/videoHome' component={VideoHome} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/user/setting' component={Setting} />
