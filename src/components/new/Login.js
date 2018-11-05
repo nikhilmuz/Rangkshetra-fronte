@@ -39,15 +39,17 @@ export default class Login extends Component{
             .then(
                 response =>
                 {
-                    alert("Success")
-                    // window.location.href = '/rangkshetra/user/dashboard';
-                    // localStorage.setItem('Token', response.data.token );
+                    localStorage.setItem('Token', response.data.token );
+                    localStorage.setItem('short_name', response.data.short_name );
+                    localStorage.setItem('full_name', response.data.full_name );
+                    localStorage.setItem('email', response.data.email );
+                    window.location.href = '/user/dashboard';
                 }
             )
             .catch(
                 error =>
                 {
-                    alert(error);
+                    alert('Incorrect Credentials');
                 }
             )
     }

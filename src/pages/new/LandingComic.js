@@ -50,7 +50,7 @@ export default class LandingComic extends Component {
             return null;
         });
         return (
-            <div  style={{ paddingTop:'50px'}}>
+            <div>
                 <h1 style={{ textAlign:'center', position:'sticky'}}> Comics</h1>
                 <div className="language" id="#DivForHoverItem">
                     <button className="langdropbtn">

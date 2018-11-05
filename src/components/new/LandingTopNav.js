@@ -55,7 +55,7 @@ export default class LandingTopNav extends Component {
             </DropdownItem>
             <DropdownItem divider />
             <DropdownItem href="#">
-                <a onClick={this.logout}>Logout</a>
+                <a onClick={LandingTopNav.logout}>Logout</a>
             </DropdownItem>
         </DropdownMenu>
     </UncontrolledDropdown>
@@ -66,5 +66,10 @@ export default class LandingTopNav extends Component {
 }
                     </Nav></Collapse></Navbar>
         )
+    }
+
+    static logout() {
+        localStorage.clear();
+        window.location.href="/";
     }
 }
