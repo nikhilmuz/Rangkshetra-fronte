@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import tbs_logo from '../assets/tbs_logo.png';
 import Modal from "react-responsive-modal";
-import Login from "./new/Login";
+import ModalForm from "./ModalForm";
 import {
     Collapse,
     DropdownItem,
@@ -61,7 +61,7 @@ export default class LandingTopNav extends Component {
         <li style={{color:'white'}}>
             <a style={{color:'inherit'}} href="#" onClick={this.onOpenModal}>Login</a>
             <Modal open={open} onClose={this.onCloseModal} center>
-                <Login/>
+                <ModalForm/>
             </Modal>
         </li>
 }

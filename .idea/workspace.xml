@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee7bcb68-20e7-438c-985a-4b1adeb38954" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ModalForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/New/landingComic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/New/landingComic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingTopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingTopNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/new/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/new/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Landing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/LandingComic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LandingComic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/Upload.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -106,7 +109,7 @@
           <entry key="html" value="1" />
           <entry key="http" value="1" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="106" />
+          <entry key="js" value="109" />
           <entry key="json" value="7" />
           <entry key="png" value="1" />
           <entry key="ts" value="2" />
@@ -118,7 +121,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="106" />
+          <entry key="JavaScript" value="109" />
           <entry key="Scratch" value="1" />
           <entry key="TypeScript" value="2" />
         </counts>
@@ -127,9 +130,9 @@
         <counts>
           <entry key="css" value="16" />
           <entry key="html" value="153" />
-          <entry key="js" value="6680" />
+          <entry key="js" value="7229" />
           <entry key="json" value="23" />
-          <entry key="txt" value="583" />
+          <entry key="txt" value="595" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -137,8 +140,8 @@
           <entry key="CSS" value="16" />
           <entry key="HTML" value="153" />
           <entry key="JSON" value="23" />
-          <entry key="JavaScript" value="6680" />
-          <entry key="PLAIN_TEXT" value="583" />
+          <entry key="JavaScript" value="7229" />
+          <entry key="PLAIN_TEXT" value="595" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -267,20 +270,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state relative-caret-position="276">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -314,8 +308,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/LandingTopNav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="69">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -323,8 +317,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Landing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="115">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -332,14 +326,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/LandingComic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="96" column="34" lean-forward="true" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Slider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ModalForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -427,8 +436,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/css/rangkshetra/navbar1.css" />
-        <option value="$PROJECT_DIR$/src/pages/rangkshetra/Login.js" />
         <option value="$PROJECT_DIR$/src/pages/rangkshetra/Signup.js" />
         <option value="$PROJECT_DIR$/src/pages/rangkshetra/Contact.js" />
         <option value="$PROJECT_DIR$/src/css/rangkshetra/signup.css" />
@@ -456,7 +463,6 @@
         <option value="$PROJECT_DIR$/src/components/Snackbar.js" />
         <option value="$PROJECT_DIR$/src/components/Message.js" />
         <option value="$PROJECT_DIR$/src/components/DashboardSidebar.js" />
-        <option value="$PROJECT_DIR$/src/components/new/Login.js" />
         <option value="$PROJECT_DIR$/src/pages/new/Landing.js" />
         <option value="$PROJECT_DIR$/src/components/DashboardDrawer.js" />
         <option value="$PROJECT_DIR$/src/pages/new/Dashboard.js" />
@@ -469,7 +475,6 @@
         <option value="$PROJECT_DIR$/src/components/new/LandingTopNav.js" />
         <option value="$PROJECT_DIR$/src/Routes.js" />
         <option value="$PROJECT_DIR$/src/css/rangkshetra/upload.css" />
-        <option value="$PROJECT_DIR$/src/components/LandingTopNav.js" />
         <option value="$PROJECT_DIR$/src/css/rangkshetra/dashboard.css" />
         <option value="$PROJECT_DIR$/src/pages/new/LandingComic.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
@@ -477,7 +482,11 @@
         <option value="$PROJECT_DIR$/src/components/new/ComicCard.js" />
         <option value="$PROJECT_DIR$/src/pages/user/Upload.js" />
         <option value="$PROJECT_DIR$/src/css/New/landingComic.css" />
+        <option value="$PROJECT_DIR$/src/components/new/Login.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingTopNav.js" />
         <option value="$PROJECT_DIR$/src/pages/LandingComic.js" />
+        <option value="$PROJECT_DIR$/src/components/ModalForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Slider.js" />
       </list>
     </option>
   </component>
@@ -531,12 +540,6 @@
               <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -550,40 +553,7 @@
               <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="rangkshetra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="new" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rangkshetra-fronte" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rangkshetra-fronte" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -717,7 +687,7 @@
       <workItem from="1541404277873" duration="13607000" />
       <workItem from="1541440271261" duration="81000" />
       <workItem from="1541440441974" duration="8243000" />
-      <workItem from="1541500887571" duration="700000" />
+      <workItem from="1541500887571" duration="3129000" />
     </task>
     <task id="LOCAL-00001" summary="Signup and Logout API call">
       <created>1538603241500</created>
@@ -999,11 +969,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541448876859</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Language All">
+      <created>1541501721748</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1541501721748</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431073000" />
+    <option name="totallyTimeSpent" value="433502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1018,7 +995,7 @@
     <frame x="0" y="25" width="1366" height="710" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1816828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1816828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1033,7 +1010,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49925596" weight="0.32352942" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50446427" side_tool="true" weight="0.17617449" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4955357" visible="true" weight="0.316609" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4955357" visible="true" weight="0.316609" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.56920415" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1078,7 +1055,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/src" />
     </ignored-roots>
-    <MESSAGE value="added nav" />
     <MESSAGE value="Added Section 1" />
     <MESSAGE value="addedchange" />
     <MESSAGE value="added change" />
@@ -1103,7 +1079,8 @@
     <MESSAGE value="Remove Redundant Files" />
     <MESSAGE value="Remove Redundant Files and Improved UI" />
     <MESSAGE value="Landing page UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Landing page UI" />
+    <MESSAGE value="Language All" />
+    <option name="LAST_COMMIT_MESSAGE" value="Language All" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1185,13 +1162,6 @@
     <entry file="file://$PROJECT_DIR$/src/pages/new/Upload.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/rangkshetra/Upload1.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Setting.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/new/Slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1213,13 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/new/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
-          <caret line="103" column="5" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1269,13 +1232,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingTopNav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/user/Upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -1293,26 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Landing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/New/landingComic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
@@ -1327,13 +1263,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingTopNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/LandingComic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="96" column="34" lean-forward="true" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ModalForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>

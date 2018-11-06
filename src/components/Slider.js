@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import '../../css/New/slider.css'
+import '../css/New/slider.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import tbsbanner1 from "../../assets/tbsbanner1.jpg"
-import tbsbanner2 from "../../assets/tbsbanner2.jpg"
-import tbsbanner3 from "./../../assets/tbsbanner3.jpg"
-import tbsbanner4 from "./../../assets/tbsbanner4.jpg"
-import tbsbanner5 from "./../../assets/tbsbanner5.jpg"
-import tbsbanner6 from "./../../assets/tbsbanner6.jpg"
+import tbsbanner1 from "../assets/tbsbanner1.jpg"
+import tbsbanner2 from "../assets/tbsbanner2.jpg"
+import tbsbanner3 from "../assets/tbsbanner3.jpg"
+import tbsbanner4 from "../assets/tbsbanner4.jpg"
+import tbsbanner5 from "../assets/tbsbanner5.jpg"
+import tbsbanner6 from "../assets/tbsbanner6.jpg"
 import Modal from "react-responsive-modal";
-import Login from "../../components/new/Login";
-import LandingTopNav from "../LandingTopNav";
 
 export default class Slider extends Component {
     render() {

@@ -1,7 +1,7 @@
 import React,{ Component, Fragment } from 'react'
 import landingComic from '../css/New/landingComic.css'
-import Login from "../components/new/Login";
-import CardComponent from "../components/new/ComicCard";
+import Login from "../components/ModalForm";
+import CardComponent from "../components/ComicCard";
 import { Row, Col } from 'reactstrap';
 import Grid from "@material-ui/core/Grid";
 import InfiniteScroll from "react-infinite-scroller";
@@ -132,4 +132,3 @@ export default class LandingComic extends Component {
             );
     }
 }
-
