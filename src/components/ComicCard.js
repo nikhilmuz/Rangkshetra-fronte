@@ -6,13 +6,15 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import {withStyles} from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid/Grid";
+import classNames from 'classnames';
 
 const styles = {
     card: {
         maxWidth: '100%',
+        textAlign: '-webkit-center',
     },
     media: {
-        height: '150px',
+        height: '250px',
         width: 'unset',
     },
 };
@@ -22,7 +24,7 @@ function CardComponent(props) {
         window.location.href=props.link
     }
         return (
-            <Grid item xs={6} sm={2} >
+            <Grid item xs={6} sm={3} md={2} >
                 <Card onClick={openComic} className={classes.card}>
                     <CardActionArea>
                         <CardMedia
@@ -31,14 +33,14 @@ function CardComponent(props) {
                             image={props.cover}
                             title={props.title}
                         />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                {props.title}
-                            </Typography>
-                            <Typography component="p">
-                                Number of Episodes: {props.desc}
-                            </Typography>
-                        </CardContent>
+                        {/*<CardContent>*/}
+                            {/*<Typography gutterBottom variant="h5" component="h2">*/}
+                                {/*{props.title}*/}
+                            {/*</Typography>*/}
+                            {/*<Typography component="p">*/}
+                                {/*Number of Episodes: {props.desc}*/}
+                            {/*</Typography>*/}
+                        {/*</CardContent>*/}
                     </CardActionArea>
                 </Card>
             </Grid>
