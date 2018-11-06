@@ -19,7 +19,7 @@ function CardComponent(props) {
     }
         return (
             <Grid item xs={6} sm={2} >
-                <Card onClick={openComic} className="comicCard">
+                <Card style={{height:'250px'}} onClick={openComic} className="comicCard">
                     <CardActionArea>
                         <CardMedia
                             className="comicCardMedia"
