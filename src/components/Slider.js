@@ -16,6 +16,7 @@ export default class Slider extends Component {
             <div>
                 <div className='carousel'>
                     <Carousel
+                        onClickItem={()=>{window.location.href="#comics"}}
                     showThumbs={false}
                     dynamicHeight={1}
                     showStatus={0}
