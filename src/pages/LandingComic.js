@@ -17,8 +17,8 @@ export default class LandingComic extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selected_lang: 'HIN',
-            selected_lang_name : 'हिंदी',
+            selected_lang: 'ALL',
+            selected_lang_name : 'Language',
             comics: [],
             more: true,
             next: null,
@@ -95,7 +95,12 @@ export default class LandingComic extends Component {
     loadMore(){
         let url;
         if(this.state.next==null){
-            url=API_ROOT+COMIC_FEED_API+"?lang="+this.state.selected_lang;
+            if(this.state.selected_lang==="ALL"){
+                url=API_ROOT+COMIC_FEED_API;
+            }
+            else {
+                url=API_ROOT+COMIC_FEED_API+"?lang="+this.state.selected_lang;
+            }
         }
         else {
             url=this.state.next;

@@ -12,9 +12,9 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
-import Grid from "@material-ui/core/Grid/Grid";
+import Grid from "@material-ui/core/Grid";
 import Icon from '@material-ui/core/Icon';
-import Input from "@material-ui/core/Input/Input";
+import Input from "@material-ui/core/Input";
 const UPLOAD_API = 'comics/upload/';
 
 export default class Upload extends Component{
