@@ -18,8 +18,8 @@
 
 .language {
     position: relative;
-    float: right;
-    margin-right: 10%;
+    float: left;
+    margin-left: 2%;
 }
 
 .language-content {
@@ -31,6 +31,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 .language-content ul{
     list-style-type: none;
     float: left;

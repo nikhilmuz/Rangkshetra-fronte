@@ -10,12 +10,11 @@ import classNames from 'classnames';
 
 const styles = {
     card: {
-        maxWidth: '100%',
         textAlign: '-webkit-center',
     },
     media: {
         height: '250px',
-        width: 'unset',
+        // width: '100%',
     },
 };
 function CardComponent(props) {
