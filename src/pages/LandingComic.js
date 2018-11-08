@@ -8,11 +8,11 @@ import InfiniteScroll from "react-infinite-scroller";
 import ArtCard from "../components/ArtCard";
 import {API_ROOT} from "../Config";
 import axios from "axios";
+import FeaturedComics from "../components/FeaturedComics";
 
 const COMIC_FEED_API = 'comics/list/';
 
 export default class LandingComic extends Component {
-
 
     constructor(props) {
         super(props);
@@ -40,13 +40,13 @@ export default class LandingComic extends Component {
         let items = [];
         this.state.comics.map((comic, i) => {
             items.push(
-                    <CardComponent
-                        key={i}
-                        cover={comic.cover}
-                        title={comic.title}
-                        desc={comic.episodes}
-                        link={comic.link}
-                    />
+                <CardComponent
+                    key={i}
+                    cover={comic.cover}
+                    title={comic.title}
+                    desc={comic.episodes}
+                    link={comic.link}
+                />
             );
             return null;
         });
@@ -57,38 +57,44 @@ export default class LandingComic extends Component {
                     <Grid item xs={8} sm={12} >
                         <h1 style={{ textAlign:'center', position:'sticky'}}> Comics</h1>
                     </Grid>
-                    <Grid item xs={2} sm={12} >
-                        <div className="language" id="#DivForHoverItem">
-                            <button className="langdropbtn">
-                                <i className="fa fa-language"/> {this.state.selected_lang_name}
-                                <div id="hiddenArrow">
-                                    <i className="fa fa-angle-double-down"/>
-                                </div>
-                            </button>
-                            <div className="language-content">
-                                <a onClick={() => this.handleLangChange("HIN","हिंदी")}>हिंदी</a>
-                                <a onClick={() => this.handleLangChange("ENG","English")}>English</a>
-                                <a onClick={() => this.handleLangChange("MAR","मराठी")}>मराठी</a>
-                                <a onClick={() => this.handleLangChange("TEL","తెలుగు")}>తెలుగు</a>
-                                <a onClick={() => this.handleLangChange("BEN","বাঙালি")}>বাঙালি</a>
-                                <a onClick={() => this.handleLangChange("KAN","ಕನ್ನಡ")}>ಕನ್ನಡ</a>
-                            </div>
-                        </div>
-                    </Grid>
+                    <Grid item xs={2} sm={12} />
                 </Grid>
-                <InfiniteScroll
-                    style={{width:'100%'}}
-                    className="text-center"
-                    pageStart={0}
-                    loadMore={this.loadMore}
-                    hasMore={this.state.more}
-                    loader={<div className="loader" key={0}>Loading ...</div>}
-                    useWindow={false}
-                >
-                    <Grid container xs={12} sm={12} spacing={24} style={{margin:'0%', paddingLeft:'5%', paddingRight:'5%'}}>
-                        {items}
-                    </Grid>
-                </InfiniteScroll>
+                <FeaturedComics lang_name="हिंदी" lang_code="HIN"/>
+                <FeaturedComics lang_name="मराठी" lang_code="MAR"/>
+                <FeaturedComics lang_name="తెలుగు" lang_code="TEL"/>
+                <FeaturedComics lang_name="বাঙালি" lang_code="BEN"/>
+                <FeaturedComics lang_name="English" lang_code="ENG"/>
+                <FeaturedComics lang_name="ಕನ್ನಡ" lang_code="KAN"/>
+                    {/*<div className="language" id="#DivForHoverItem">*/}
+                        {/*<button className="langdropbtn">*/}
+                            {/*<i className="fa fa-language"/>*/}
+                            {/*Hindi*/}
+                            {/*<div id="hiddenArrow">*/}
+                                {/*<i className="fa fa-angle-double-down"/>*/}
+                            {/*</div>*/}
+                        {/*</button>*/}
+                        {/*<div className="language-content">*/}
+                        {/*<a onClick={() => this.handleLangChange("HIN","हिंदी")}>हिंदी</a>*/}
+                        {/*<a onClick={() => this.handleLangChange("ENG","English")}>English</a>*/}
+                        {/*<a onClick={() => this.handleLangChange("MAR","मराठी")}>मराठी</a>*/}
+                        {/*<a onClick={() => this.handleLangChange("TEL","తెలుగు")}>తెలుగు</a>*/}
+                        {/*<a onClick={() => this.handleLangChange("BEN","বাঙালি")}>বাঙালি</a>*/}
+                        {/*<a onClick={() => this.handleLangChange("KAN","ಕನ್ನಡ")}>ಕನ್ನಡ</a>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                {/*<InfiniteScroll*/}
+                    {/*style={{width:'100%'}}*/}
+                    {/*className="text-center"*/}
+                    {/*pageStart={0}*/}
+                    {/*loadMore={this.loadMore}*/}
+                    {/*hasMore={this.state.more}*/}
+                    {/*loader={<div className="loader" key={0}>Loading ...</div>}*/}
+                    {/*useWindow={false}*/}
+                {/*>*/}
+                    {/*<Grid container xs={12} sm={12} spacing={24} style={{margin:'0%', paddingLeft:'5%', paddingRight:'5%'}}>*/}
+                        {/*{items}*/}
+                    {/*</Grid>*/}
+                {/*</InfiniteScroll>*/}
             </div>
         )
     }
