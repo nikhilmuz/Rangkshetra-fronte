@@ -38,12 +38,11 @@ export default class FeaturedComics extends Component {
         });
         return (
             <div>
-                <div className="language" id="#DivForHoverItem">
                     <button className="langdropbtn">
                         {this.state.lang_name}
                     </button>
-                </div>
-                <Grid container xs={12} sm={12} spacing={24} style={{margin:'0%', paddingLeft:'5%', paddingRight:'5%'}}>
+                <br/>
+                <Grid justify="space-evenly" container md={12} xs={12} sm={12} spacing={24}>
                     {items}
                 </Grid>
             </div>

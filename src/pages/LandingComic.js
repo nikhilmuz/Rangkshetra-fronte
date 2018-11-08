@@ -5,7 +5,6 @@ import CardComponent from "../components/ComicCard";
 import { Row, Col } from 'reactstrap';
 import Grid from "@material-ui/core/Grid";
 import InfiniteScroll from "react-infinite-scroller";
-import ArtCard from "../components/ArtCard";
 import {API_ROOT} from "../Config";
 import axios from "axios";
 import FeaturedComics from "../components/FeaturedComics";
