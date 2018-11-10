@@ -1,10 +1,7 @@
-import React,{ Component, Fragment } from 'react'
-import landingComic from '../css/New/landingComic.css'
-import Login from "../components/ModalForm";
+import React, {Component} from 'react'
+import '../css/New/landingComic.css'
 import CardComponent from "../components/ComicCard";
-import { Row, Col } from 'reactstrap';
 import Grid from "@material-ui/core/Grid";
-import InfiniteScroll from "react-infinite-scroller";
 import {API_ROOT} from "../Config";
 import axios from "axios";
 import FeaturedComics from "../components/FeaturedComics";

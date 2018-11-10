@@ -4,11 +4,6 @@ import LandingComic from "./LandingComic";
 
 export default class Landing extends Component{
     render(){
-        let fullpageOptions = {
-            anchors:['intro', 'comics'],
-            scrollBar:false,
-            navigation:false,
-        };
         return (
             <div>
                 <div>

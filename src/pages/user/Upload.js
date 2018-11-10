@@ -1,10 +1,8 @@
-import React,{Component} from 'react'
+import React, {Component} from 'react'
 import '../../css/rangkshetra/upload.css'
 import Dropzone from 'react-dropzone';
 import axios from 'axios';
-
 import {API_ROOT} from "../../Config";
-import LandingTopNav from "../../components/LandingTopNav";
 import Button from "@material-ui/core/Button";
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import FormControl from "@material-ui/core/FormControl";
@@ -13,8 +11,7 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
-import Icon from '@material-ui/core/Icon';
-import Input from "@material-ui/core/Input";
+
 const UPLOAD_API = 'comics/upload/';
 
 export default class Upload extends Component{

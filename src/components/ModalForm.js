@@ -52,7 +52,6 @@ export default class ModalForm extends Component{
             )
     }
     render(){
-        const { open } = this.state;
         if (this.state.isLogin) {
             return <div className="loginContainer">
                 <i className="fa fa-user"/>&nbsp;
