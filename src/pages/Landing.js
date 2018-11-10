@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {SectionsContainer, Section} from 'react-fullpage';
 import Slider from "../components/Slider";
 import LandingComic from "./LandingComic";
 
