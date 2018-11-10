@@ -114,6 +114,7 @@ class Upload extends Component{
                                 <MenuItem value={'MAR'}>Marathi</MenuItem>
                                 <MenuItem value={'BEN'}>Bengali</MenuItem>
                                 <MenuItem value={'KAN'}>Kannada</MenuItem>
+                                <MenuItem value={'OTH'}>Others</MenuItem>
                             </Select>
                         </FormControl>
                         <br/>
@@ -131,6 +132,7 @@ class Upload extends Component{
                                 <MenuItem value={'SHR'}>Superhero Fantasy</MenuItem>
                                 <MenuItem value={'HRR'}>Horror</MenuItem>
                                 <MenuItem value={'HNM'}>History and Mythology</MenuItem>
+                                <MenuItem value={'OTH'}>Others</MenuItem>
                             </Select>
                         </FormControl>
                     </Grid>
