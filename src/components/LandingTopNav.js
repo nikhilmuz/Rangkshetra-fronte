@@ -32,6 +32,7 @@ export default class LandingTopNav extends Component {
             <Navbar
                 style={{backgroundColor:'#19215F', zIndex:100}}
                 expand="md"
+                light={true}
             >
                 <NavbarBrand href="/">
                     <img style={{width: '10%', paddingLeft:'10px'}} src={tbs_logo} alt="TBS planet" />

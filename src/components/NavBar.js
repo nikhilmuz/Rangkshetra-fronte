@@ -12,12 +12,10 @@ export default class NavBar1 extends Component{
         <div>
             <div className="logo">
                 <img src={logo} alt="Rangkshetra" height="100px"/>
-
             </div>
             <div className='site-title' ><span >Rangkshetra</span> </div>
             <div className="tbsLogo">
                 <a href="http://www.tbsplanet.com"> <img src={tbs_logo} alt="TBS PLANET" height="80px"/></a>
-
             </div>
            <ul id="nav" className="navbar">
                 <li><a href="/rangkshetra">Home</a></li>
