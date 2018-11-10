@@ -18,11 +18,11 @@ export default class Slider extends Component {
                     <Carousel
                         onClickItem={()=>{window.location.href="#comics"}}
                     showThumbs={false}
-                    dynamicHeight={1}
-                    showStatus={0}
-                    autoPlay={0}
-                    interval={2000}
-                    infiniteLoop={2}
+                    dynamicHeight={false}
+                    showStatus={false}
+                    autoPlay={true}
+                    interval={3000}
+                    infiniteLoop={true}
 
                 >
                         <div className="slideImage">
@@ -43,7 +43,6 @@ export default class Slider extends Component {
                     <div className="slideImage">
                         <img src={tbsbanner3} />
                     </div>
-
                     </Carousel>
                 </div>
                 </div>

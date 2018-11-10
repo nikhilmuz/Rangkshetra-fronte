@@ -11,15 +11,14 @@ export default class Landing extends Component{
             navigation:false,
         };
         return (
-            <div >
-            <SectionsContainer {...fullpageOptions}>
-                <Section>
+            <div>
+                <div>
                     <Slider/>
-                </Section>
-                <Section>
+                </div>
+                <a name="comics"/>
+                <div>
                     <LandingComic/>
-                </Section>
-            </SectionsContainer>
+                </div>
             </div>
         );
     }

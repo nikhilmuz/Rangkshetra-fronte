@@ -20,7 +20,8 @@ const styles = {
 function CardComponent(props) {
     const { classes } = props;
     function openComic() {
-        window.location.href=props.link
+        let win = window.open(props.link, '_blank');
+        win.focus();
     }
         return (
             <Grid item xs={6} sm={3} md={2} >

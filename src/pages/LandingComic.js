@@ -58,12 +58,14 @@ export default class LandingComic extends Component {
                     </Grid>
                     <Grid item xs={2} sm={12} />
                 </Grid>
-                <FeaturedComics lang_name="हिंदी" lang_code="HIN"/>
-                <FeaturedComics lang_name="मराठी" lang_code="MAR"/>
-                <FeaturedComics lang_name="తెలుగు" lang_code="TEL"/>
-                <FeaturedComics lang_name="বাঙালি" lang_code="BEN"/>
-                <FeaturedComics lang_name="English" lang_code="ENG"/>
+                <Grid container xs={12} sm={12}>
+                <FeaturedComics lang_name="हिंदी" lang_code="HIN"/><br/>
+                <FeaturedComics lang_name="मराठी" lang_code="MAR"/><br/>
+                <FeaturedComics lang_name="తెలుగు" lang_code="TEL"/><br/>
+                <FeaturedComics lang_name="বাঙালি" lang_code="BEN"/><br/>
+                <FeaturedComics lang_name="English" lang_code="ENG"/><br/>
                 <FeaturedComics lang_name="ಕನ್ನಡ" lang_code="KAN"/>
+                </Grid>
                     {/*<div className="language" id="#DivForHoverItem">*/}
                         {/*<button className="langdropbtn">*/}
                             {/*<i className="fa fa-language"/>*/}

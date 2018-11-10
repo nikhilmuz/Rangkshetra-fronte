@@ -1,5 +1,4 @@
 import React,{ Component, Fragment } from 'react'
-import landingComic from '../css/New/landingComic.css'
 import Login from "../components/ModalForm";
 import CardComponent from "../components/ComicCard";
 import { Row, Col } from 'reactstrap';
@@ -60,8 +59,8 @@ export default class FeaturedComics extends Component {
                 {
                     response.data.results.map((result) => {
                         this.state.comics.push(result);
-                        return null;
                     });
+                    window.location.href="#";
                 }
             )
             .catch(

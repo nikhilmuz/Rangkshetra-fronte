@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.2",
     "@material-ui/core": "^3.4.0",
     "@material-ui/icons": "^3.0.1",
     "antd": "^3.10.4",
@@ -10,13 +11,13 @@
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
     "npm": "^6.4.1",
+    "prop-types": "latest",
     "react": "^16.6.1",
     "react-axios": "^2.0.1",
     "react-body-backgroundcolor": "^1.2.1",
     "react-dom": "^16.6.1",
     "react-dropdown": "^1.6.2",
     "react-dropzone": "^7.0.1",
-    "react-fullpage": "^0.1.19",
     "react-infinite-scroller": "^1.2.2",
     "react-navbar": "^3.0.0",
     "react-responsive-carousel": "^3.1.43",
@@ -28,7 +29,7 @@
     "reactstrap": "^6.5.0",
     "save": "^2.3.2",
     "yarn": "^1.12.3",
-    "prop-types": "latest"
+    "react-fullpage": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
