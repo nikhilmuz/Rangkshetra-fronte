@@ -11,10 +11,15 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
+import {withStyles} from "@material-ui/core/styles";
 
 const UPLOAD_API = 'comics/upload/';
-
-export default class Upload extends Component{
+const styles = {
+    select: {
+        width: 500,
+    },
+};
+class Upload extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -69,8 +74,9 @@ export default class Upload extends Component{
             )
     }
     render(){
+        const { classes } = this.props;
         return(
-            <div className = "text-center">
+            <div>
                 <Dropzone
                     multiple={false}
                     // accept="image/*"
@@ -94,6 +100,7 @@ export default class Upload extends Component{
                         <FormControl>
                             <InputLabel htmlFor="language-select">Language</InputLabel>
                             <Select
+                                className={classes.select}
                                 value={this.state.language}
                                 onChange={(e)=>{this.setState({language: e.target.value})}}
                                 inputProps={{
@@ -113,6 +120,7 @@ export default class Upload extends Component{
                         <FormControl>
                             <InputLabel htmlFor="genre-select">Genre</InputLabel>
                             <Select
+                                className={classes.select}
                                 value={this.state.genre}
                                 onChange={(e)=>{this.setState({genre: e.target.value})}}
                                 inputProps={{
@@ -140,10 +148,13 @@ export default class Upload extends Component{
                     </Grid>
                 </Grid>
                 <br/>
-                <Button onClick={this.handleUpload} variant="contained" color="default">
-                    Submit
-                </Button>
+                <div className="text-center">
+                    <Button onClick={this.handleUpload} variant="contained" color="default">
+                        Submit
+                    </Button>
+                </div>
             </div>
         );
     }
 }
+export default withStyles(styles)(Upload);
