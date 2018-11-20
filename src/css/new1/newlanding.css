@@ -1,0 +1,96 @@
+body {
+background-color:#dedede;
+}
+.shortcuts {
+    background-color: #f6f6f6;
+    width: 90%;
+    float: left;
+}
+.userOptions, .languages{
+    background-color: #eaeaea;
+    width: 90%;
+    float: left;
+}
+
+.shortcuts,  .userOptions, .languages ul{
+    /*width: 100%;*/
+    list-style-type: none;
+}
+.shortcuts li,.userOptions li,.languages li{
+    float: left;
+    display: inline;
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    text-align: center;
+}
+.shortcuts li{
+    padding: 5px;
+    font-size: 12px;
+}
+.userOptions li{
+    padding: 5px 0 5px 10px;
+    font-size: 15px;
+}
+.userOptions .right li{
+    float: right;
+    margin-right: 1%;
+}
+.languages li {
+    /*width: 15%;*/
+    padding: 5px 15px 5px 15px;
+    font-size: 17px;
+
+}
+.languages li:hover, .userOptions a:hover, .shortcuts li:hover{
+    border-bottom: 1px solid rgba(61, 53, 81, 0.9);
+    cursor: pointer;
+}
+.logo{
+    float: initial;
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    padding: 12px ;
+    background-color: #f6f6f6;
+}
+.logo img{
+    /*width:100px;*/
+    /*height: 90px;*/
+}
+
+.section1{
+    height: 400px;
+    background-color: #999900;
+}
+.section2{
+    height: 400px;
+    background-color: #149949;
+}
+.pageEnd{
+    margin: 0 50px 0 50px;
+    padding: 50px;
+
+}
+.pageEnd h2{
+    margin-left: 30px;
+}
+.pageEnd input[type="text"] {
+    margin: 10px;
+    padding: 9px;
+    width: 400px;
+
+}
+.pageEnd select{
+    margin: 10px;
+    padding: 10px;
+}
+
+.pageEnd button{
+    margin:10px;
+    padding: 8px;
+    background-color: transparent;
+    width: 100px;
+}
+.search{
+    font-family: FontAwesome;
+}
