@@ -29,7 +29,7 @@
     "react-scripts": "2.1.1",
     "react-simple-dropdown": "^3.2.3",
     "reactstrap": "^6.5.0",
-    "save": "^2.3.2",
+    "save": "^2.3.3",
     "yarn": "^1.12.3"
   },
   "scripts": {
