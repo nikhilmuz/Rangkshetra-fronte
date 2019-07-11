@@ -28,7 +28,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "react-simple-dropdown": "^3.2.3",
-    "reactstrap": "^6.5.0",
+    "reactstrap": "^8.0.1",
     "save": "^2.3.3",
     "yarn": "^1.12.3"
   },
